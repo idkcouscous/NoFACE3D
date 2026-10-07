@@ -68,7 +68,7 @@ Keep `required-media.json` in sync if the gallery paths change.
 
 ## Boundary anchoring ablation
 
-Two supplied pairs are shown one at a time with shared camera, orbit, pan, zoom, auto-rotation, and texture/clay/normal controls. Each pair compares `voxel_to_mesh_remesh_1024` (Without noise scheduling) against its matching `stock_mesh` (With noise scheduling).
+Two supplied pairs are shown one at a time with shared camera, orbit, pan, zoom, auto-rotation, and texture/clay/normal controls. Each pair compares `voxel_to_mesh_remesh_1024` (Without noise scheduling) against its matching `12_remesh/joined_remesh_1024.glb` (With noise scheduling). The refined meshes are the supplied S3 remesh outputs for Yun Jin and Kamisato Ayaka; their source URIs are recorded in the manifest.
 
 The four displayed GLBs are stored unchanged on the `ablation-assets` branch and loaded through immutable GitHub raw URLs recorded in `ablation-manifest.json`. This keeps the Pages deployment below its size limit. The viewer checks byte lengths, SHA-256 hashes, and triangle counts. Both meshes use one common display transform; there is no independent alignment or simplification. Only the selected pair loads, starting when the ablation section approaches the viewport.
 

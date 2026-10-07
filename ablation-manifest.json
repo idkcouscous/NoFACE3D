@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "sourceRevision": "4305cd33daca25dba953e669e3c34c7f72d70fe5",
+  "sourceRevision": "e979427a6957e1241823399ca8a3962f47251ca0",
   "collections": {
     "ablation": {
       "label": "Boundary anchoring ablation",
@@ -30,22 +30,23 @@
               ]
             },
             {
-              "path": "https://raw.githubusercontent.com/idkcouscous/NoFACE3D/4305cd33daca25dba953e669e3c34c7f72d70fe5/bc3a78870c73/stock.glb",
-              "bytes": 66480556,
-              "sha256": "03514f139516296fb994161498af1e98e36529860df01e35982e17b84f93b665",
-              "triangles": 970060,
+              "path": "https://raw.githubusercontent.com/idkcouscous/NoFACE3D/e979427a6957e1241823399ca8a3962f47251ca0/bc3a78870c73/joined_remesh_1024.glb",
+              "bytes": 67971052,
+              "sha256": "50dc6c5f2e6f0258b071b7ec4f93f78ef849ce96f32b5ba2ee34045c8eb9692f",
+              "triangles": 996439,
               "bounds": [
                 [
                   -0.3310444951057434,
-                  -0.500795304775238,
+                  -0.5007929801940918,
                   -0.16717959940433502
                 ],
                 [
-                  0.3310422897338867,
-                  0.5008755922317505,
-                  0.1853162944316864
+                  0.3311920166015625,
+                  0.49983689188957214,
+                  0.18534208834171295
                 ]
-              ]
+              ],
+              "source": "s3://core-ai-ml-runtime-us-east-1/jamesrose/inference-results/ss-genshin-vroid-textured/genshin/bc3a78870c732593/12_remesh/joined_remesh_1024.glb"
             }
           ],
           "view": [
@@ -111,22 +112,23 @@
               ]
             },
             {
-              "path": "https://raw.githubusercontent.com/idkcouscous/NoFACE3D/4305cd33daca25dba953e669e3c34c7f72d70fe5/62bd59e889f0/stock.glb",
-              "bytes": 75153636,
-              "sha256": "8aa897e32acc54157ffa3308e3f649c4128c29c0a4d19f53fafeab96dbdd2dff",
-              "triangles": 992713,
+              "path": "https://raw.githubusercontent.com/idkcouscous/NoFACE3D/e979427a6957e1241823399ca8a3962f47251ca0/62bd59e889f0/joined_remesh_1024.glb",
+              "bytes": 75802204,
+              "sha256": "1a761f8d1931ba75112d22e879bb69c3547ed5f21726f5284326300a4dbff93d",
+              "triangles": 987674,
               "bounds": [
                 [
                   -0.33963584899902344,
-                  -0.5009714365005493,
-                  -0.2105824500322342
+                  -0.5009710192680359,
+                  -0.21050631999969482
                 ],
                 [
-                  0.33981674909591675,
-                  0.500583291053772,
-                  0.2028210461139679
+                  0.339728444814682,
+                  0.5009186863899231,
+                  0.20283657312393188
                 ]
-              ]
+              ],
+              "source": "s3://core-ai-ml-runtime-us-east-1/jamesrose/inference-results/ss-genshin-vroid-textured/genshin/62bd59e889f0f202/12_remesh/joined_remesh_1024.glb"
             }
           ],
           "view": [
