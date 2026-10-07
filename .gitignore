@@ -1,0 +1,9 @@
+__pycache__/
+*.pyc
+.venv*/
+.playwright-cli/
+server.log
+server.pid
+assets/
+*.pdf
+preview-*.png
