@@ -22,6 +22,8 @@ const errorBox = element('bd-error');
 const overlays = [...root.querySelectorAll('.bd-overlay')];
 const input = element('bd-input');
 const inputLink = element('bd-input-link');
+const boxToggle = root.querySelector('[data-bd-box-toggle]');
+let regionHelpers = [], boxesVisible = boxToggle?.checked ?? true;
 const actionButtons = [...root.querySelectorAll('[data-bd-action]')];
 let selected = Math.max(0, samples.findIndex(s => syncURL && s.id === query.get('sample'))), generation = 0, abort = null, loaded = false, started = false;
 let visible = false, dirty = true, lastTime = 0, mode = 'textured', auto = false;
@@ -119,6 +121,33 @@ function disposeGroups(groups) {
   textures.forEach(t => { if (t.image?.close) images.add(t.image); t.dispose(); });
   images.forEach(x => x.close());
 }
+function disposeRegionHelpers() {
+  for (const helper of regionHelpers) {
+    helper.removeFromParent(); helper.geometry.dispose(); helper.material.dispose();
+  }
+  regionHelpers = [];
+}
+function addRegionHelpers(sample) {
+  if (!sample.refinementBox) return;
+  // Metadata records source-mesh coordinates; apply the same display frame as both meshes.
+  const points = sample.refinementBox.bounds.map(point => new THREE.Vector3(...point)
+    .sub(new THREE.Vector3(...sample.frame.center)).multiplyScalar(sample.frame.scale));
+  const box = new THREE.Box3(points[0], points[1]);
+  regionHelpers = scenes.map(scene => {
+    const helper = new THREE.Box3Helper(box.clone(), 0xe88126);
+    helper.material.toneMapped = false;
+    helper.material.depthTest = false; helper.material.depthWrite = false;
+    helper.material.transparent = true; helper.material.opacity = .9;
+    helper.renderOrder = 100; helper.visible = boxesVisible;
+    scene.add(helper); return helper;
+  });
+  root.dataset.boxesVisible = String(boxesVisible);
+}
+boxToggle?.addEventListener('change', () => {
+  boxesVisible = boxToggle.checked;
+  regionHelpers.forEach(helper => { helper.visible = boxesVisible; });
+  root.dataset.boxesVisible = String(boxesVisible); dirty = true;
+});
 function modeApply() {
   for (const g of currentGroups) g.traverse(obj => {
     if (obj.isMesh) obj.material = mode === 'normals' ? materials.normals : mode === 'clay' ? materials.clay : obj.userData.originalMaterial;
@@ -195,13 +224,16 @@ async function readGLB(asset, i, signal, version) {
 async function loadSelected(preserveCamera = false) {
   const saved = preserveCamera && loaded ? {position:camera.position.clone(),target:controls.target.clone(),detail:detailView} : null;
   const version = ++generation, sample = samples[selected];
+  const focusDetail = Boolean(sample.refinementBox && detailView);
   const models = quality === 'full' && sample.sourceModels ? sample.sourceModels : sample.models;
   abort?.abort(); abort = new AbortController();
   const signal = abort.signal;
-  loaded = false; auto = false; detailView = false;
+  loaded = false; auto = false;
   controls.autoRotate = false; setPressed('rotate',false);
   element('bd-rotate').textContent = 'Auto-rotate';
+  disposeRegionHelpers();
   disposeGroups(currentGroups); currentGroups = [];
+  if (boxToggle) boxToggle.disabled = true;
   delete root.dataset.verified;
   root.dataset.state = 'loading'; stage.setAttribute('aria-busy','true');
   errorBox.hidden = true;
@@ -231,13 +263,19 @@ async function loadSelected(preserveCamera = false) {
   });
   const sphere = bounds.getBoundingSphere(new THREE.Sphere());
   fullTarget = sphere.center; fullRadius = sphere.radius;
+  addRegionHelpers(sample);
   loaded = true; modeApply(); resize();
   if (saved) {
     camera.position.copy(saved.position); controls.target.copy(saved.target); detailView=saved.detail;
     setPressed('detail',detailView); setPressed('full',!detailView); controls.update();
-  } else frame(false);
+  } else {
+    // Establish the sample orientation before focusing its recorded region.
+    frame(false);
+    if (focusDetail) frame(true);
+  }
   overlays.forEach(el => el.hidden = true);
   actionButtons.forEach(b => b.disabled = false);
+  if (boxToggle) boxToggle.disabled = !sample.refinementBox;
   stage.setAttribute('aria-busy','false'); root.dataset.state = 'ready';
   root.dataset.verified = 'sha256-and-triangles';
   announce('Views synchronized · drag either model to explore');

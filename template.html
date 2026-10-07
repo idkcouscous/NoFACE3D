@@ -24,7 +24,7 @@ details{border-top:1px solid var(--line);margin-top:24px;padding-top:14px;font-s
 </style>
 <link rel="stylesheet" href="bigdetail.css?v=20261006g">
 <link rel="stylesheet" href="bigdetail-gallery.css?v=20261007-unified">
-<link rel="stylesheet" href="ablation.css">
+<link rel="stylesheet" href="ablation.css?v=20261007-regions">
 <script type="importmap">{"imports":{"three":"./vendor/three/build/three.module.js"}}</script>
 </head>
 <body>
@@ -87,11 +87,13 @@ details{border-top:1px solid var(--line);margin-top:24px;padding-top:14px;font-s
     </div>
     <div class="bd-group" role="group" aria-label="Ablation shared camera controls">
       <button type="button" data-bd-action="full" aria-pressed="true" disabled>Full object</button>
+      <button type="button" data-bd-action="detail" aria-pressed="false" disabled>Detail</button>
       <button id="ablation-rotate" data-viewer="bd-rotate" type="button" data-bd-action="rotate" aria-pressed="false" disabled>Auto-rotate</button>
       <button type="button" data-bd-action="zoom-in" aria-label="Zoom both ablation models in" disabled>+</button>
       <button type="button" data-bd-action="zoom-out" aria-label="Zoom both ablation models out" disabled>−</button>
     </div>
   </div>
+  <label class="bd-box-toggle"><input type="checkbox" role="switch" data-bd-box-toggle checked disabled>Refinement box</label>
   <div class="bd-pair">
     <div class="bd-pane-heads">
       <div class="bd-pane-head"><strong data-viewer="bd-original-label">Without noise scheduling</strong></div>
@@ -157,7 +159,7 @@ document.querySelectorAll("[data-edit]").forEach(function(x){x.setAttribute("ari
 })});
 })();
 </script>
-<script type="module" src="bigdetail.js?v=20261007-ablation"></script>
+<script type="module" src="bigdetail.js?v=20261007-regions"></script>
 <script type="module" src="bigdetail-gallery.js"></script>
-<script type="module" src="ablation.js"></script>
+<script type="module" src="ablation.js?v=20261007-regions"></script>
 </body></html>

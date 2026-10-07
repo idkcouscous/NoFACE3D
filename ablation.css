@@ -3,3 +3,6 @@
 #ablation-viewer .bd-stage{height:480px}
 @media(max-width:620px){#ablation-viewer .bd-stage{height:340px}}
 @media print{#ablation-viewer{display:none}}
+
+#ablation-viewer .bd-box-toggle{display:flex;align-items:center;gap:8px;width:fit-content;min-height:42px;margin:0 0 12px;font-size:13px;cursor:pointer}
+#ablation-viewer .bd-box-toggle input{width:18px;height:18px;accent-color:var(--green);cursor:pointer}

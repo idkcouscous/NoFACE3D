@@ -1,0 +1,38 @@
+{
+  "bc3a78870c73": {
+    "uri": "s3://core-ai-ml-runtime-us-east-1/jamesrose/inference-results/ss-genshin-vroid-textured/genshin/bc3a78870c732593/02_semantic_crop/selection.json",
+    "field": "selection.source_cube_bounds",
+    "sha256": "55e59cfbfb047a90e47e1e873b87e5e13e470e369c824ca1f32209f6f95b8307",
+    "bounds": [
+      [
+        -0.155906214573712,
+        0.19766542684570956,
+        -0.18850309290135517
+      ],
+      [
+        0.1570031553208854,
+        0.5105747967403069,
+        0.12440627699324223
+      ]
+    ],
+    "alignmentCrossCheck": "Inverse alignment of aligned_cube_bounds agrees with source_cube_bounds to 1e-10."
+  },
+  "62bd59e889f0": {
+    "uri": "s3://core-ai-ml-runtime-us-east-1/jamesrose/inference-results/ss-genshin-vroid-textured/genshin/62bd59e889f0f202/02_semantic_crop/selection.json",
+    "field": "selection.source_cube_bounds",
+    "sha256": "b69972e6dcb6ef3b192f6b2f91c9ee6bafd6a106896d9ef8353a95493d20215d",
+    "bounds": [
+      [
+        -0.15365688123797785,
+        0.20584412150000786,
+        -0.1530573736829978
+      ],
+      [
+        0.154991901229164,
+        0.5144929039671496,
+        0.15559140878414407
+      ]
+    ],
+    "alignmentCrossCheck": "Inverse alignment of aligned_cube_bounds agrees with source_cube_bounds to 1e-10."
+  }
+}
