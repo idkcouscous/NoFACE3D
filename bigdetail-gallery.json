@@ -1,0 +1,698 @@
+{
+  "seed": 20261007,
+  "images": [
+    {
+      "src": "assets/bigdetail-gallery/001.jpg",
+      "label": "110 electric wine opener",
+      "width": 720,
+      "height": 720,
+      "source_file": "110_electric_wine_opener.jpg"
+    },
+    {
+      "src": "assets/bigdetail-gallery/002.jpg",
+      "label": "182 pneumatic air hammer",
+      "width": 720,
+      "height": 720,
+      "source_file": "182_pneumatic_air_hammer.jpg"
+    },
+    {
+      "src": "assets/bigdetail-gallery/003.jpg",
+      "label": "028 modern casement window",
+      "width": 720,
+      "height": 720,
+      "source_file": "028_modern_casement_window.jpg"
+    },
+    {
+      "src": "assets/bigdetail-gallery/004.jpg",
+      "label": "150 electric toothbrush",
+      "width": 720,
+      "height": 720,
+      "source_file": "150_electric_toothbrush.jpg"
+    },
+    {
+      "src": "assets/bigdetail-gallery/005.jpg",
+      "label": "324 hvac condensate drain line",
+      "width": 720,
+      "height": 720,
+      "source_file": "324_hvac_condensate_drain_line.jpg"
+    },
+    {
+      "src": "assets/bigdetail-gallery/006.jpg",
+      "label": "338 commercial garment steamer",
+      "width": 720,
+      "height": 720,
+      "source_file": "338_commercial_garment_steamer.jpg"
+    },
+    {
+      "src": "assets/bigdetail-gallery/007.jpg",
+      "label": "385 substation aluminum busbar",
+      "width": 720,
+      "height": 720,
+      "source_file": "385_substation_aluminum_busbar.jpg"
+    },
+    {
+      "src": "assets/bigdetail-gallery/008.jpg",
+      "label": "308 leather swivel knife",
+      "width": 720,
+      "height": 720,
+      "source_file": "308_leather_swivel_knife.jpg"
+    },
+    {
+      "src": "assets/bigdetail-gallery/009.jpg",
+      "label": "039 laboratory micropipette",
+      "width": 720,
+      "height": 720,
+      "source_file": "039_laboratory_micropipette.jpg"
+    },
+    {
+      "src": "assets/bigdetail-gallery/010.jpg",
+      "label": "144 bicycle rear shock absorber",
+      "width": 720,
+      "height": 720,
+      "source_file": "144_bicycle_rear_shock_absorber.jpg"
+    },
+    {
+      "src": "assets/bigdetail-gallery/011.jpg",
+      "label": "052 xlr microphone cable",
+      "width": 720,
+      "height": 720,
+      "source_file": "052_xlr_microphone_cable.jpg"
+    },
+    {
+      "src": "assets/bigdetail-gallery/012.jpg",
+      "label": "260 fly system locking rail",
+      "width": 720,
+      "height": 720,
+      "source_file": "260_fly_system_locking_rail.jpg"
+    },
+    {
+      "src": "assets/bigdetail-gallery/013.jpg",
+      "label": "289 retractable banner support pole",
+      "width": 720,
+      "height": 720,
+      "source_file": "289_retractable_banner_support_pole.jpg"
+    },
+    {
+      "src": "assets/bigdetail-gallery/014.jpg",
+      "label": "040 headless electric bass",
+      "width": 720,
+      "height": 720,
+      "source_file": "040_headless_electric_bass.jpg"
+    },
+    {
+      "src": "assets/bigdetail-gallery/015.jpg",
+      "label": "374 roller sponge mop",
+      "width": 720,
+      "height": 720,
+      "source_file": "374_roller_sponge_mop.jpg"
+    },
+    {
+      "src": "assets/bigdetail-gallery/016.jpg",
+      "label": "244 modern flat panel radiator",
+      "width": 720,
+      "height": 720,
+      "source_file": "244_modern_flat_panel_radiator.jpg"
+    },
+    {
+      "src": "assets/bigdetail-gallery/017.jpg",
+      "label": "002 tig welding torch",
+      "width": 720,
+      "height": 720,
+      "source_file": "002_tig_welding_torch.jpg"
+    },
+    {
+      "src": "assets/bigdetail-gallery/018.jpg",
+      "label": "353 tripod impact sprinkler",
+      "width": 720,
+      "height": 720,
+      "source_file": "353_tripod_impact_sprinkler.jpg"
+    },
+    {
+      "src": "assets/bigdetail-gallery/019.jpg",
+      "label": "086 fixed wing mapping drone",
+      "width": 720,
+      "height": 720,
+      "source_file": "086_fixed_wing_mapping_drone.jpg"
+    },
+    {
+      "src": "assets/bigdetail-gallery/020.jpg",
+      "label": "046 high altitude weather balloon",
+      "width": 720,
+      "height": 720,
+      "source_file": "046_high_altitude_weather_balloon.jpg"
+    },
+    {
+      "src": "assets/bigdetail-gallery/021.jpg",
+      "label": "281 wildland drip torch",
+      "width": 720,
+      "height": 720,
+      "source_file": "281_wildland_drip_torch.jpg"
+    },
+    {
+      "src": "assets/bigdetail-gallery/022.jpg",
+      "label": "066 fighter jet pilot helmet",
+      "width": 720,
+      "height": 720,
+      "source_file": "066_fighter_jet_pilot_helmet.jpg"
+    },
+    {
+      "src": "assets/bigdetail-gallery/023.jpg",
+      "label": "068 frameless glass pool fence",
+      "width": 720,
+      "height": 720,
+      "source_file": "068_frameless_glass_pool_fence.jpg"
+    },
+    {
+      "src": "assets/bigdetail-gallery/024.jpg",
+      "label": "045 scuba diving cylinder",
+      "width": 720,
+      "height": 720,
+      "source_file": "045_scuba_diving_cylinder.jpg"
+    },
+    {
+      "src": "assets/bigdetail-gallery/025.jpg",
+      "label": "166 fighter jet control stick",
+      "width": 720,
+      "height": 720,
+      "source_file": "166_fighter_jet_control_stick.jpg"
+    },
+    {
+      "src": "assets/bigdetail-gallery/026.jpg",
+      "label": "091 cold brew drip tower",
+      "width": 720,
+      "height": 720,
+      "source_file": "091_cold_brew_drip_tower.jpg"
+    },
+    {
+      "src": "assets/bigdetail-gallery/027.jpg",
+      "label": "186 sailplane glider fuselage",
+      "width": 720,
+      "height": 720,
+      "source_file": "186_sailplane_glider_fuselage.jpg"
+    },
+    {
+      "src": "assets/bigdetail-gallery/028.jpg",
+      "label": "248 wooden stitching pony",
+      "width": 720,
+      "height": 720,
+      "source_file": "248_wooden_stitching_pony.jpg"
+    },
+    {
+      "src": "assets/bigdetail-gallery/029.jpg",
+      "label": "114 tall pedestal sundial",
+      "width": 720,
+      "height": 720,
+      "source_file": "114_tall_pedestal_sundial.jpg"
+    },
+    {
+      "src": "assets/bigdetail-gallery/030.jpg",
+      "label": "361 fixed fire monitor",
+      "width": 720,
+      "height": 720,
+      "source_file": "361_fixed_fire_monitor.jpg"
+    },
+    {
+      "src": "assets/bigdetail-gallery/031.jpg",
+      "label": "178 sword scabbard",
+      "width": 720,
+      "height": 720,
+      "source_file": "178_sword_scabbard.jpg"
+    },
+    {
+      "src": "assets/bigdetail-gallery/032.jpg",
+      "label": "121 coping saw",
+      "width": 720,
+      "height": 720,
+      "source_file": "121_coping_saw.jpg"
+    },
+    {
+      "src": "assets/bigdetail-gallery/033.jpg",
+      "label": "021 heavy duty adjustable wrench",
+      "width": 720,
+      "height": 720,
+      "source_file": "021_heavy_duty_adjustable_wrench.jpg"
+    },
+    {
+      "src": "assets/bigdetail-gallery/034.jpg",
+      "label": "099 medical oxygen cylinder",
+      "width": 720,
+      "height": 720,
+      "source_file": "099_medical_oxygen_cylinder.jpg"
+    },
+    {
+      "src": "assets/bigdetail-gallery/035.jpg",
+      "label": "025 marine vhf antenna",
+      "width": 720,
+      "height": 720,
+      "source_file": "025_marine_vhf_antenna.jpg"
+    },
+    {
+      "src": "assets/bigdetail-gallery/036.jpg",
+      "label": "276 stream velocity meter",
+      "width": 720,
+      "height": 720,
+      "source_file": "276_stream_velocity_meter.jpg"
+    },
+    {
+      "src": "assets/bigdetail-gallery/037.jpg",
+      "label": "390 wooden oak foeder",
+      "width": 720,
+      "height": 720,
+      "source_file": "390_wooden_oak_foeder.jpg"
+    },
+    {
+      "src": "assets/bigdetail-gallery/038.jpg",
+      "label": "019 medical stethoscope",
+      "width": 720,
+      "height": 720,
+      "source_file": "019_medical_stethoscope.jpg"
+    },
+    {
+      "src": "assets/bigdetail-gallery/039.jpg",
+      "label": "009 clamp on desk lamp",
+      "width": 720,
+      "height": 720,
+      "source_file": "009_clamp_on_desk_lamp.jpg"
+    },
+    {
+      "src": "assets/bigdetail-gallery/040.jpg",
+      "label": "003 car passenger door",
+      "width": 720,
+      "height": 720,
+      "source_file": "003_car_passenger_door.jpg"
+    },
+    {
+      "src": "assets/bigdetail-gallery/041.jpg",
+      "label": "370 swing top beer bottle",
+      "width": 720,
+      "height": 720,
+      "source_file": "370_swing_top_beer_bottle.jpg"
+    },
+    {
+      "src": "assets/bigdetail-gallery/042.jpg",
+      "label": "120 stroh horn violin",
+      "width": 720,
+      "height": 720,
+      "source_file": "120_stroh_horn_violin.jpg"
+    },
+    {
+      "src": "assets/bigdetail-gallery/043.jpg",
+      "label": "243 dth rock drill",
+      "width": 720,
+      "height": 720,
+      "source_file": "243_dth_rock_drill.jpg"
+    },
+    {
+      "src": "assets/bigdetail-gallery/044.jpg",
+      "label": "418 hui merchant manor",
+      "width": 720,
+      "height": 720,
+      "source_file": "418_hui_merchant_manor.jpg"
+    },
+    {
+      "src": "assets/bigdetail-gallery/045.jpg",
+      "label": "380 wind up lighting stand",
+      "width": 720,
+      "height": 720,
+      "source_file": "380_wind_up_lighting_stand.jpg"
+    },
+    {
+      "src": "assets/bigdetail-gallery/046.jpg",
+      "label": "319 dual line stunt kite",
+      "width": 720,
+      "height": 720,
+      "source_file": "319_dual_line_stunt_kite.jpg"
+    },
+    {
+      "src": "assets/bigdetail-gallery/047.jpg",
+      "label": "057 camping stove fuel bottle",
+      "width": 720,
+      "height": 720,
+      "source_file": "057_camping_stove_fuel_bottle.jpg"
+    },
+    {
+      "src": "assets/bigdetail-gallery/048.jpg",
+      "label": "014 bank vault door",
+      "width": 720,
+      "height": 720,
+      "source_file": "014_bank_vault_door.jpg"
+    },
+    {
+      "src": "assets/bigdetail-gallery/049.jpg",
+      "label": "062 grease gun",
+      "width": 720,
+      "height": 720,
+      "source_file": "062_grease_gun.jpg"
+    },
+    {
+      "src": "assets/bigdetail-gallery/050.jpg",
+      "label": "213 telescopic tree lopper",
+      "width": 720,
+      "height": 720,
+      "source_file": "213_telescopic_tree_lopper.jpg"
+    },
+    {
+      "src": "assets/bigdetail-gallery/051.jpg",
+      "label": "206 sdi coaxial cable",
+      "width": 720,
+      "height": 720,
+      "source_file": "206_sdi_coaxial_cable.jpg"
+    },
+    {
+      "src": "assets/bigdetail-gallery/052.jpg",
+      "label": "195 brass wax seal stamp",
+      "width": 720,
+      "height": 720,
+      "source_file": "195_brass_wax_seal_stamp.jpg"
+    },
+    {
+      "src": "assets/bigdetail-gallery/053.jpg",
+      "label": "233 rainwater collection barrel",
+      "width": 720,
+      "height": 720,
+      "source_file": "233_rainwater_collection_barrel.jpg"
+    },
+    {
+      "src": "assets/bigdetail-gallery/054.jpg",
+      "label": "400 camera jib arm",
+      "width": 720,
+      "height": 720,
+      "source_file": "400_camera_jib_arm.jpg"
+    },
+    {
+      "src": "assets/bigdetail-gallery/055.jpg",
+      "label": "237 aquarium co2 cylinder",
+      "width": 720,
+      "height": 720,
+      "source_file": "237_aquarium_co2_cylinder.jpg"
+    },
+    {
+      "src": "assets/bigdetail-gallery/056.jpg",
+      "label": "356 surveying jacob s staff",
+      "width": 720,
+      "height": 720,
+      "source_file": "356_surveying_jacob_s_staff.jpg"
+    },
+    {
+      "src": "assets/bigdetail-gallery/057.jpg",
+      "label": "179 medical otoscope",
+      "width": 720,
+      "height": 720,
+      "source_file": "179_medical_otoscope.jpg"
+    },
+    {
+      "src": "assets/bigdetail-gallery/058.jpg",
+      "label": "312 glassblowing glory hole",
+      "width": 720,
+      "height": 720,
+      "source_file": "312_glassblowing_glory_hole.jpg"
+    },
+    {
+      "src": "assets/bigdetail-gallery/059.jpg",
+      "label": "026 variable pitch airplane propeller",
+      "width": 720,
+      "height": 720,
+      "source_file": "026_variable_pitch_airplane_propeller.jpg"
+    },
+    {
+      "src": "assets/bigdetail-gallery/060.jpg",
+      "label": "322 electrified third rail",
+      "width": 720,
+      "height": 720,
+      "source_file": "322_electrified_third_rail.jpg"
+    },
+    {
+      "src": "assets/bigdetail-gallery/061.jpg",
+      "label": "136 tennis racket stringing machine",
+      "width": 720,
+      "height": 720,
+      "source_file": "136_tennis_racket_stringing_machine.jpg"
+    },
+    {
+      "src": "assets/bigdetail-gallery/062.jpg",
+      "label": "382 locomotive air horn",
+      "width": 720,
+      "height": 720,
+      "source_file": "382_locomotive_air_horn.jpg"
+    },
+    {
+      "src": "assets/bigdetail-gallery/063.jpg",
+      "label": "280 stage pin extension cable",
+      "width": 720,
+      "height": 720,
+      "source_file": "280_stage_pin_extension_cable.jpg"
+    },
+    {
+      "src": "assets/bigdetail-gallery/064.jpg",
+      "label": "200 wood mounted music box",
+      "width": 720,
+      "height": 720,
+      "source_file": "200_wood_mounted_music_box.jpg"
+    },
+    {
+      "src": "assets/bigdetail-gallery/065.jpg",
+      "label": "378 uv counterfeit bill detector",
+      "width": 720,
+      "height": 720,
+      "source_file": "378_uv_counterfeit_bill_detector.jpg"
+    },
+    {
+      "src": "assets/bigdetail-gallery/066.jpg",
+      "label": "177 cave diving reel",
+      "width": 720,
+      "height": 720,
+      "source_file": "177_cave_diving_reel.jpg"
+    },
+    {
+      "src": "assets/bigdetail-gallery/067.jpg",
+      "label": "071 culinary butane blowtorch",
+      "width": 720,
+      "height": 720,
+      "source_file": "071_culinary_butane_blowtorch.jpg"
+    },
+    {
+      "src": "assets/bigdetail-gallery/068.jpg",
+      "label": "239 rc helicopter tail boom",
+      "width": 720,
+      "height": 720,
+      "source_file": "239_rc_helicopter_tail_boom.jpg"
+    },
+    {
+      "src": "assets/bigdetail-gallery/069.jpg",
+      "label": "285 overhead service drop cable",
+      "width": 720,
+      "height": 720,
+      "source_file": "285_overhead_service_drop_cable.jpg"
+    },
+    {
+      "src": "assets/bigdetail-gallery/070.jpg",
+      "label": "162 cat40 end mill holder",
+      "width": 720,
+      "height": 720,
+      "source_file": "162_cat40_end_mill_holder.jpg"
+    },
+    {
+      "src": "assets/bigdetail-gallery/071.jpg",
+      "label": "409 sooty blacksmith forge",
+      "width": 720,
+      "height": 720,
+      "source_file": "409_sooty_blacksmith_forge.jpg"
+    },
+    {
+      "src": "assets/bigdetail-gallery/072.jpg",
+      "label": "032 hi hat cymbal stand",
+      "width": 720,
+      "height": 720,
+      "source_file": "032_hi_hat_cymbal_stand.jpg"
+    },
+    {
+      "src": "assets/bigdetail-gallery/073.jpg",
+      "label": "257 pig watering pipe",
+      "width": 720,
+      "height": 720,
+      "source_file": "257_pig_watering_pipe.jpg"
+    },
+    {
+      "src": "assets/bigdetail-gallery/074.jpg",
+      "label": "059 dental drill handpiece",
+      "width": 720,
+      "height": 720,
+      "source_file": "059_dental_drill_handpiece.jpg"
+    },
+    {
+      "src": "assets/bigdetail-gallery/075.jpg",
+      "label": "236 surveyor s measuring wheel",
+      "width": 720,
+      "height": 720,
+      "source_file": "236_surveyor_s_measuring_wheel.jpg"
+    },
+    {
+      "src": "assets/bigdetail-gallery/076.jpg",
+      "label": "373 arborist flip line",
+      "width": 720,
+      "height": 720,
+      "source_file": "373_arborist_flip_line.jpg"
+    },
+    {
+      "src": "assets/bigdetail-gallery/077.jpg",
+      "label": "262 locomotive steam whistle",
+      "width": 720,
+      "height": 720,
+      "source_file": "262_locomotive_steam_whistle.jpg"
+    },
+    {
+      "src": "assets/bigdetail-gallery/078.jpg",
+      "label": "323 wireline lubricator riser",
+      "width": 720,
+      "height": 720,
+      "source_file": "323_wireline_lubricator_riser.jpg"
+    },
+    {
+      "src": "assets/bigdetail-gallery/079.jpg",
+      "label": "226 handheld megaphone",
+      "width": 720,
+      "height": 720,
+      "source_file": "226_handheld_megaphone.jpg"
+    },
+    {
+      "src": "assets/bigdetail-gallery/080.jpg",
+      "label": "098 naval cannon",
+      "width": 720,
+      "height": 720,
+      "source_file": "098_naval_cannon.jpg"
+    },
+    {
+      "src": "assets/bigdetail-gallery/081.jpg",
+      "label": "404 stargazer observatory tower",
+      "width": 720,
+      "height": 720,
+      "source_file": "404_stargazer_observatory_tower.jpg"
+    },
+    {
+      "src": "assets/bigdetail-gallery/082.jpg",
+      "label": "258 queue management stanchion",
+      "width": 720,
+      "height": 720,
+      "source_file": "258_queue_management_stanchion.jpg"
+    },
+    {
+      "src": "assets/bigdetail-gallery/083.jpg",
+      "label": "412 lotus waterside pavilion",
+      "width": 720,
+      "height": 720,
+      "source_file": "412_lotus_waterside_pavilion.jpg"
+    },
+    {
+      "src": "assets/bigdetail-gallery/084.jpg",
+      "label": "415 hot springs bathhouse",
+      "width": 720,
+      "height": 720,
+      "source_file": "415_hot_springs_bathhouse.jpg"
+    },
+    {
+      "src": "assets/bigdetail-gallery/085.jpg",
+      "label": "053 super telephoto lens",
+      "width": 720,
+      "height": 720,
+      "source_file": "053_super_telephoto_lens.jpg"
+    },
+    {
+      "src": "assets/bigdetail-gallery/086.jpg",
+      "label": "148 sliding barn door",
+      "width": 720,
+      "height": 720,
+      "source_file": "148_sliding_barn_door.jpg"
+    },
+    {
+      "src": "assets/bigdetail-gallery/087.jpg",
+      "label": "101 tubular bow saw",
+      "width": 720,
+      "height": 720,
+      "source_file": "101_tubular_bow_saw.jpg"
+    },
+    {
+      "src": "assets/bigdetail-gallery/088.jpg",
+      "label": "173 industrial endoscope",
+      "width": 720,
+      "height": 720,
+      "source_file": "173_industrial_endoscope.jpg"
+    },
+    {
+      "src": "assets/bigdetail-gallery/089.jpg",
+      "label": "328 wooden boat shuttle",
+      "width": 720,
+      "height": 720,
+      "source_file": "328_wooden_boat_shuttle.jpg"
+    },
+    {
+      "src": "assets/bigdetail-gallery/090.jpg",
+      "label": "030 handheld milk frother",
+      "width": 720,
+      "height": 720,
+      "source_file": "030_handheld_milk_frother.jpg"
+    },
+    {
+      "src": "assets/bigdetail-gallery/091.jpg",
+      "label": "117 isobutane camping stove",
+      "width": 720,
+      "height": 720,
+      "source_file": "117_isobutane_camping_stove.jpg"
+    },
+    {
+      "src": "assets/bigdetail-gallery/092.jpg",
+      "label": "152 upright double bass",
+      "width": 720,
+      "height": 720,
+      "source_file": "152_upright_double_bass.jpg"
+    },
+    {
+      "src": "assets/bigdetail-gallery/093.jpg",
+      "label": "017 scuba diving tank",
+      "width": 720,
+      "height": 720,
+      "source_file": "017_scuba_diving_tank.jpg"
+    },
+    {
+      "src": "assets/bigdetail-gallery/094.jpg",
+      "label": "381 heavy rescue lifting bag",
+      "width": 720,
+      "height": 720,
+      "source_file": "381_heavy_rescue_lifting_bag.jpg"
+    },
+    {
+      "src": "assets/bigdetail-gallery/095.jpg",
+      "label": "191 mandoline food slicer",
+      "width": 720,
+      "height": 720,
+      "source_file": "191_mandoline_food_slicer.jpg"
+    },
+    {
+      "src": "assets/bigdetail-gallery/096.jpg",
+      "label": "203 oil rig drill pipe",
+      "width": 720,
+      "height": 720,
+      "source_file": "203_oil_rig_drill_pipe.jpg"
+    },
+    {
+      "src": "assets/bigdetail-gallery/097.jpg",
+      "label": "209 letterpress composing stick",
+      "width": 720,
+      "height": 720,
+      "source_file": "209_letterpress_composing_stick.jpg"
+    },
+    {
+      "src": "assets/bigdetail-gallery/098.jpg",
+      "label": "406 bowed windmill bakery",
+      "width": 720,
+      "height": 720,
+      "source_file": "406_bowed_windmill_bakery.jpg"
+    },
+    {
+      "src": "assets/bigdetail-gallery/099.jpg",
+      "label": "278 retail tablet stand",
+      "width": 720,
+      "height": 720,
+      "source_file": "278_retail_tablet_stand.jpg"
+    }
+  ]
+}

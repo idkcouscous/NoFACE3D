@@ -23,6 +23,7 @@ details{border-top:1px solid var(--line);margin-top:24px;padding-top:14px;font-s
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 </style>
 <link rel="stylesheet" href="bigdetail.css?v=20261006g">
+<link rel="stylesheet" href="bigdetail-gallery.css">
 <script type="importmap">{"imports":{"three":"./vendor/three/build/three.module.js"}}</script>
 </head>
 <body>
@@ -90,6 +91,17 @@ details{border-top:1px solid var(--line);margin-top:24px;padding-top:14px;font-s
 <section class="block" id="benchmark">
 <div class="section-head"><span class="index">06</span><h2>BIGDETAIL benchmark</h2></div>
 <div class="layout"><div class="benchmark"><span class="tag">339 refined assets</span><h3>Objects with annotated detail regions</h3><p>339 refined assets with image crops and 3D region annotations for small structures such as mechanisms, fittings, and connectors.</p><div class="resource-grid"><div class="resource"><b>Conditioning images</b><span>Generated object images and corresponding detail crops.</span></div><div class="resource"><b>Region annotations</b><span>Image rectangles and oriented 3D selection boxes.</span></div><div class="resource"><b>Evaluation protocol</b><span>Paired comparisons of original and refined assets; no artist ground-truth meshes.</span></div></div><div class="actions" style="margin-top:24px"><a class="action" href="#results">View examples ↑</a></div></div></div>
+<section class="image-gallery" aria-labelledby="bigdetail-gallery-heading">
+  <h3 id="bigdetail-gallery-heading">BIGDETAIL images</h3>
+  <p class="caption">99 randomly sampled conditioning images.</p>
+  <div id="bigdetail-image-grid" class="image-gallery-grid" aria-busy="true"></div>
+  <div class="image-gallery-navigation">
+    <button id="bigdetail-images-last" class="action" type="button" aria-label="Previous three images" aria-controls="bigdetail-image-grid" disabled>Last</button>
+    <p id="bigdetail-images-status" role="status" aria-live="polite">Loading images…</p>
+    <button id="bigdetail-images-next" class="action" type="button" aria-label="Next three images" aria-controls="bigdetail-image-grid" disabled>Next</button>
+  </div>
+</section>
+
 <div class="limitations"><b>Limitations</b><p>Printed labels and lettering may remain distorted after refinement.</p></div>
 </section>
 <section class="block" id="resources">
@@ -112,4 +124,5 @@ document.querySelectorAll("[data-edit]").forEach(function(x){x.setAttribute("ari
 })();
 </script>
 <script type="module" src="bigdetail.js?v=20261006g"></script>
+<script type="module" src="bigdetail-gallery.js"></script>
 </body></html>

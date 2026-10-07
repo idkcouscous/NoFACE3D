@@ -20,7 +20,7 @@ This source bundle contains the project page and its synchronized 3D comparison 
 
 The repository includes the selected image and model assets, both fast previews and full-quality meshes, and the linked PDFs. `required-media.json` lists these files. Only the selected sample and quality are downloaded by the viewer.
 
-GitHub Pages serves the repository root from `main`; `.nojekyll` enables static-file delivery. The generated pages can be published without running the Python build. The complete site is approximately 948 MB, so keep the GitHub Pages size limit in mind when adding media.
+GitHub Pages serves the repository root from `main`; `.nojekyll` enables static-file delivery. The generated pages can be published without running the Python build. The complete site is approximately 952 MB, so keep the GitHub Pages size limit in mind when adding media.
 
 The build uses the original figure-source `paper.pdf` with fixed page indices. Replacing the paper may require updating those indices.
 
@@ -46,3 +46,22 @@ python build.py
 The build updates all three HTML entry points and precompresses preview meshes. To generate optional PDF snapshots, install Playwright and its Chromium browser, start the preview server, then run `python export_pdf.py`.
 
 The page identifies the paper as under anonymous review. Method code and the full BIGDETAIL dataset are planned for release; this repository hosts the project website and its selected examples.
+
+## BIGDETAIL image gallery
+
+The benchmark section shows 99 conditioning images randomly sampled from a collection of 420 source images (seed `20261007`). The sample is fixed across visits. Each JPEG preserves its aspect ratio and fits within 1280×720 pixels without upscaling.
+
+The gallery displays three images at a time across 33 pages. Next advances one page; Last returns to the previous page. Only the current three images are requested.
+
+- `bigdetail-gallery.json`: selected filenames, image dimensions, and sampling seed.
+- `bigdetail-gallery.js` / `bigdetail-gallery.css`: gallery controls and layout.
+- `assets/bigdetail-gallery/`: 99 resized JPEGs.
+- `prepare_gallery.py`: samples and resizes an authorized local image collection using Pillow. Source downloads use the shared Portal service.
+
+To regenerate from a local source collection, install Pillow and run:
+
+```sh
+python prepare_gallery.py /path/to/source-images . --seed 20261007
+```
+
+Keep `required-media.json` in sync if the gallery paths change.
