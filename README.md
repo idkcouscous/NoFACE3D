@@ -45,4 +45,4 @@ python build.py
 
 The build updates all three HTML entry points and precompresses preview meshes. To generate optional PDF snapshots, install Playwright and its Chromium browser, start the preview server, then run `python export_pdf.py`.
 
-The page remains a draft: editorial notes, author information, citation metadata, and release links need final review before publication.
+The page identifies the paper as under anonymous review. Method code and the full BIGDETAIL dataset are planned for release; this repository hosts the project website and its selected examples.
