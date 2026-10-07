@@ -24,6 +24,7 @@ details{border-top:1px solid var(--line);margin-top:24px;padding-top:14px;font-s
 </style>
 <link rel="stylesheet" href="bigdetail.css?v=20261006g">
 <link rel="stylesheet" href="bigdetail-gallery.css?v=20261007-unified">
+<link rel="stylesheet" href="ablation.css">
 <script type="importmap">{"imports":{"three":"./vendor/three/build/three.module.js"}}</script>
 </head>
 <body>
@@ -47,19 +48,19 @@ details{border-top:1px solid var(--line);margin-top:24px;padding-top:14px;font-s
 <div class="tabs" role="group" aria-label="Result collection"><button type="button" data-gallery="objects" aria-pressed="true">Objects · BIGDETAIL</button><button type="button" data-gallery="characters" aria-pressed="false">Characters</button><button type="button" data-gallery="texverse" aria-pressed="false">Objects · TexVerse</button></div>
 <div id="bigdetail-viewer" class="bd" aria-label="BIGDETAIL synchronized 3D comparisons">
 <div class="bd-picker" role="group" aria-label="Choose a BIGDETAIL object"></div>
-<div class="bd-heading"><h3 id="bd-title">Correction tape dispenser</h3><span id="bd-count" class="bd-count">1 / 5</span></div>
+<div class="bd-heading"><h3 id="bd-title" data-viewer="bd-title">Correction tape dispenser</h3><span id="bd-count" data-viewer="bd-count" class="bd-count">1 / 5</span></div>
 <div class="bd-tools">
 <div class="bd-group" role="group" aria-label="Rendering mode"><button type="button" data-bd-action="textured" aria-pressed="true" disabled>Textured</button><button type="button" data-bd-action="clay" aria-pressed="false" disabled>Clay</button><button type="button" data-bd-action="normals" aria-pressed="false" disabled>Normals</button></div>
-<div class="bd-group" role="group" aria-label="Shared camera controls"><button type="button" data-bd-action="full" aria-pressed="true" disabled>Full object</button><button type="button" data-bd-action="detail" aria-pressed="false" disabled>Detail</button><button id="bd-rotate" type="button" data-bd-action="rotate" aria-pressed="false" disabled>Auto-rotate</button><button type="button" data-bd-action="zoom-in" aria-label="Zoom both models in" disabled>+</button><button type="button" data-bd-action="zoom-out" aria-label="Zoom both models out" disabled>−</button></div>
+<div class="bd-group" role="group" aria-label="Shared camera controls"><button type="button" data-bd-action="full" aria-pressed="true" disabled>Full object</button><button type="button" data-bd-action="detail" aria-pressed="false" disabled>Detail</button><button id="bd-rotate" data-viewer="bd-rotate" type="button" data-bd-action="rotate" aria-pressed="false" disabled>Auto-rotate</button><button type="button" data-bd-action="zoom-in" aria-label="Zoom both models in" disabled>+</button><button type="button" data-bd-action="zoom-out" aria-label="Zoom both models out" disabled>−</button></div>
 </div>
-<div class="bd-quality"><div class="bd-group" role="group" aria-label="Mesh quality"><button type="button" data-bd-quality="preview" aria-pressed="true">Fast preview</button><button type="button" data-bd-quality="full" aria-pressed="false">Full quality</button></div><p id="bd-quality-note">Simplified previews. Use Full quality to inspect the original geometry and textures.</p></div>
+<div class="bd-quality"><div class="bd-group" role="group" aria-label="Mesh quality"><button type="button" data-bd-quality="preview" aria-pressed="true">Fast preview</button><button type="button" data-bd-quality="full" aria-pressed="false">Full quality</button></div><p id="bd-quality-note" data-viewer="bd-quality-note">Simplified previews. Use Full quality to inspect the original geometry and textures.</p></div>
 <div class="bd-layout">
-<figure class="bd-input"><figcaption>Input image</figcaption><a id="bd-input-link" href="assets/bigdetail/115_correction_tape_dispenser/input.jpg" target="_blank" rel="noopener" aria-label="Open full-resolution conditioning image"><img id="bd-input" src="assets/bigdetail/115_correction_tape_dispenser/input.jpg" alt="Conditioning image: correction tape dispenser" loading="lazy"></a></figure>
-<div class="bd-pair"><div class="bd-pane-heads"><div class="bd-pane-head"><strong id="bd-original-label">TRELLIS.2</strong></div><div class="bd-pane-head"><strong>Ours · NOFACE3D</strong></div></div>
-<div id="bd-stage" class="bd-stage" aria-label="Drag either model to rotate both 3D views" aria-busy="false"><div class="bd-viewport" data-pane="original"><div class="bd-overlay">Preparing viewer…</div></div><div class="bd-viewport" data-pane="refined"><div class="bd-overlay">Preparing viewer…</div></div></div>
+<figure class="bd-input"><figcaption>Input image</figcaption><a id="bd-input-link" data-viewer="bd-input-link" href="assets/bigdetail/115_correction_tape_dispenser/input.jpg" target="_blank" rel="noopener" aria-label="Open full-resolution conditioning image"><img id="bd-input" data-viewer="bd-input" src="assets/bigdetail/115_correction_tape_dispenser/input.jpg" alt="Conditioning image: correction tape dispenser" loading="lazy"></a></figure>
+<div class="bd-pair"><div class="bd-pane-heads"><div class="bd-pane-head"><strong id="bd-original-label" data-viewer="bd-original-label">TRELLIS.2</strong></div><div class="bd-pane-head"><strong id="bd-refined-label" data-viewer="bd-refined-label">Ours · NOFACE3D</strong></div></div>
+<div id="bd-stage" data-viewer="bd-stage" class="bd-stage" aria-label="Drag either model to rotate both 3D views" aria-busy="false"><div class="bd-viewport" data-pane="original"><div class="bd-overlay">Preparing viewer…</div></div><div class="bd-viewport" data-pane="refined"><div class="bd-overlay">Preparing viewer…</div></div></div>
 </div></div>
-<div class="bd-bottom"><p class="bd-hint">Drag to orbit · right-drag to pan · + / − or Alt+scroll to zoom · cameras always linked</p><p id="bd-status" class="bd-status" role="status" aria-live="polite">Scroll to explore the 3D comparison</p></div>
-<div id="bd-error" class="bd-error" role="alert" hidden><div id="bd-error-message"></div><button id="bd-retry" type="button">Retry loading</button></div>
+<div class="bd-bottom"><p class="bd-hint">Drag to orbit · right-drag to pan · + / − or Alt+scroll to zoom · cameras always linked</p><p id="bd-status" data-viewer="bd-status" class="bd-status" role="status" aria-live="polite">Scroll to explore the 3D comparison</p></div>
+<div id="bd-error" data-viewer="bd-error" class="bd-error" role="alert" hidden><div id="bd-error-message" data-viewer="bd-error-message"></div><button id="bd-retry" data-viewer="bd-retry" type="button">Retry loading</button></div>
 <div class="bd-print"><img src="{{objects}}" alt="BIGDETAIL static comparisons for printing"><p class="caption">The webpage includes nine interactive comparisons across BIGDETAIL, characters, and TexVerse. This printed preview shows the paper comparison figure.</p></div>
 </div>
 <script id="bigdetail-data" type="application/json">{{bigdetail_manifest}}</script>
@@ -74,8 +75,40 @@ details{border-top:1px solid var(--line);margin-top:24px;padding-top:14px;font-s
 </section>
 <section class="block" id="anchoring">
 <div class="section-head"><span class="index">03</span><h2>Boundary anchoring ablation</h2></div>
-<p class="section-lead">Comparison with and without spatial noise scheduling at the crop boundary.</p>
-<div class="layout"><div class="image-frame"><img class="ablation" src="{{ablation}}" alt="Figure 5: without boundary anchoring and noise scheduling on top, full method below, with matching texture and normal views." loading="lazy"><p class="caption">Figure 5 · Without scheduling (top) and with scheduling (bottom), in texture and normal views.</p></div></div>
+<p class="section-lead">Compare refinement with and without noise scheduling using linked cameras.</p>
+<div id="ablation-viewer" class="bd" aria-label="Boundary anchoring synchronized 3D comparisons">
+  <div class="bd-picker" role="group" aria-label="Choose an ablation sample"></div>
+  <div class="bd-heading"><h3 id="ablation-title" data-viewer="bd-title">Sample 1</h3><span id="ablation-count" data-viewer="bd-count" class="bd-count">1 / 2</span></div>
+  <div class="bd-tools">
+    <div class="bd-group" role="group" aria-label="Ablation rendering mode">
+      <button type="button" data-bd-action="textured" aria-pressed="true" disabled>Textured</button>
+      <button type="button" data-bd-action="clay" aria-pressed="false" disabled>Clay</button>
+      <button type="button" data-bd-action="normals" aria-pressed="false" disabled>Normals</button>
+    </div>
+    <div class="bd-group" role="group" aria-label="Ablation shared camera controls">
+      <button type="button" data-bd-action="full" aria-pressed="true" disabled>Full object</button>
+      <button id="ablation-rotate" data-viewer="bd-rotate" type="button" data-bd-action="rotate" aria-pressed="false" disabled>Auto-rotate</button>
+      <button type="button" data-bd-action="zoom-in" aria-label="Zoom both ablation models in" disabled>+</button>
+      <button type="button" data-bd-action="zoom-out" aria-label="Zoom both ablation models out" disabled>−</button>
+    </div>
+  </div>
+  <div class="bd-pair">
+    <div class="bd-pane-heads">
+      <div class="bd-pane-head"><strong data-viewer="bd-original-label">Without noise scheduling</strong></div>
+      <div class="bd-pane-head"><strong data-viewer="bd-refined-label">With noise scheduling</strong></div>
+    </div>
+    <div id="ablation-stage" data-viewer="bd-stage" class="bd-stage" aria-label="Drag either model to rotate both ablation views" aria-busy="false">
+      <div class="bd-viewport" data-pane="original"><div class="bd-overlay">Preparing viewer…</div></div>
+      <div class="bd-viewport" data-pane="refined"><div class="bd-overlay">Preparing viewer…</div></div>
+    </div>
+  </div>
+  <div class="bd-bottom"><p class="bd-hint">Drag to orbit · right-drag to pan · + / − or Alt+scroll to zoom · cameras always linked</p><p id="ablation-status" data-viewer="bd-status" class="bd-status" role="status" aria-live="polite">Scroll to load the comparison</p></div>
+  <div id="ablation-error" data-viewer="bd-error" class="bd-error" role="alert" hidden><div data-viewer="bd-error-message"></div><button data-viewer="bd-retry" type="button">Retry loading</button></div>
+</div>
+<script id="ablation-data" type="application/json">{{ablation_manifest}}</script>
+
+<details><summary>Paper figure</summary><div class="layout"><div class="image-frame"><img class="ablation" src="{{ablation}}" alt="Figure 5: without boundary anchoring and noise scheduling on top, full method below, with matching texture and normal views." loading="lazy"><p class="caption">Figure 5 · Without scheduling (top) and with scheduling (bottom), in texture and normal views.</p></div></div>
+</details>
 </section>
 <section class="block" id="editing">
 <div class="section-head"><span class="index">04</span><h2>Sequential editing</h2></div>
@@ -124,6 +157,7 @@ document.querySelectorAll("[data-edit]").forEach(function(x){x.setAttribute("ari
 })});
 })();
 </script>
-<script type="module" src="bigdetail.js?v=20261006g"></script>
+<script type="module" src="bigdetail.js?v=20261007-ablation"></script>
 <script type="module" src="bigdetail-gallery.js"></script>
+<script type="module" src="ablation.js"></script>
 </body></html>

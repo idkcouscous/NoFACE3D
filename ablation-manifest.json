@@ -1,0 +1,125 @@
+{
+  "version": 1,
+  "sourceRevision": "4305cd33daca25dba953e669e3c34c7f72d70fe5",
+  "collections": {
+    "ablation": {
+      "label": "Boundary anchoring ablation",
+      "samples": [
+        {
+          "id": "bc3a78870c73",
+          "label": "Sample 1",
+          "baselineLabel": "Without noise scheduling",
+          "refinedLabel": "With noise scheduling",
+          "models": [
+            {
+              "path": "https://raw.githubusercontent.com/idkcouscous/NoFACE3D/4305cd33daca25dba953e669e3c34c7f72d70fe5/bc3a78870c73/without-scheduling.glb",
+              "bytes": 68523684,
+              "sha256": "12218d3bb4027fbf527c62e72564ba4ede2801e3ffd40a1459535c2358d67e94",
+              "triangles": 973817,
+              "bounds": [
+                [
+                  -0.3310444951057434,
+                  -0.5007997751235962,
+                  -0.16717959940433502
+                ],
+                [
+                  0.3310422897338867,
+                  0.5008350610733032,
+                  0.1853162944316864
+                ]
+              ]
+            },
+            {
+              "path": "https://raw.githubusercontent.com/idkcouscous/NoFACE3D/4305cd33daca25dba953e669e3c34c7f72d70fe5/bc3a78870c73/stock.glb",
+              "bytes": 66480556,
+              "sha256": "03514f139516296fb994161498af1e98e36529860df01e35982e17b84f93b665",
+              "triangles": 970060,
+              "bounds": [
+                [
+                  -0.3310444951057434,
+                  -0.500795304775238,
+                  -0.16717959940433502
+                ],
+                [
+                  0.3310422897338867,
+                  0.5008755922317505,
+                  0.1853162944316864
+                ]
+              ]
+            }
+          ],
+          "view": [
+            0,
+            0.1,
+            3
+          ],
+          "frame": {
+            "center": [
+              -1.1026859283447266e-06,
+              3.790855407714844e-05,
+              0.00906834751367569
+            ],
+            "scale": 1.996654869611559
+          }
+        },
+        {
+          "id": "62bd59e889f0",
+          "label": "Sample 2",
+          "baselineLabel": "Without noise scheduling",
+          "refinedLabel": "With noise scheduling",
+          "models": [
+            {
+              "path": "https://raw.githubusercontent.com/idkcouscous/NoFACE3D/4305cd33daca25dba953e669e3c34c7f72d70fe5/62bd59e889f0/without-scheduling.glb",
+              "bytes": 76634524,
+              "sha256": "ed00a5a6ae24225900cca2faa4330f43e7381f242ba857e9195a9f1cd64aa909",
+              "triangles": 994940,
+              "bounds": [
+                [
+                  -0.3395489752292633,
+                  -0.5009713768959045,
+                  -0.2106148898601532
+                ],
+                [
+                  0.33980315923690796,
+                  0.5008386969566345,
+                  0.20283806324005127
+                ]
+              ]
+            },
+            {
+              "path": "https://raw.githubusercontent.com/idkcouscous/NoFACE3D/4305cd33daca25dba953e669e3c34c7f72d70fe5/62bd59e889f0/stock.glb",
+              "bytes": 75153636,
+              "sha256": "8aa897e32acc54157ffa3308e3f649c4128c29c0a4d19f53fafeab96dbdd2dff",
+              "triangles": 992713,
+              "bounds": [
+                [
+                  -0.33963584899902344,
+                  -0.5009714365005493,
+                  -0.2105824500322342
+                ],
+                [
+                  0.33981674909591675,
+                  0.500583291053772,
+                  0.2028210461139679
+                ]
+              ]
+            }
+          ],
+          "view": [
+            0,
+            0.1,
+            3
+          ],
+          "frame": {
+            "center": [
+              9.045004844665527e-05,
+              -6.636977195739746e-05,
+              -0.0038884133100509644
+            ],
+            "scale": 1.9963862744112257
+          }
+        }
+      ]
+    }
+  }
+}

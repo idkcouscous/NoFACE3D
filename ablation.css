@@ -1,0 +1,5 @@
+#ablation-viewer .bd-picker{grid-template-columns:repeat(2,minmax(0,1fr))}
+#ablation-viewer .bd-picker button{justify-content:center;text-align:center;min-height:44px}
+#ablation-viewer .bd-stage{height:480px}
+@media(max-width:620px){#ablation-viewer .bd-stage{height:340px}}
+@media print{#ablation-viewer{display:none}}

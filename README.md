@@ -65,3 +65,11 @@ python prepare_gallery.py /path/to/source-images . --seed 20261007
 ```
 
 Keep `required-media.json` in sync if the gallery paths change.
+
+## Boundary anchoring ablation
+
+Two supplied pairs are shown one at a time with shared camera, orbit, pan, zoom, auto-rotation, and texture/clay/normal controls. Each pair compares `voxel_to_mesh_remesh_1024` (Without noise scheduling) against its matching `stock_mesh` (With noise scheduling).
+
+The four displayed GLBs are stored unchanged on the `ablation-assets` branch and loaded through immutable GitHub raw URLs recorded in `ablation-manifest.json`. This keeps the Pages deployment below its size limit. The viewer checks byte lengths, SHA-256 hashes, and triangle counts. Both meshes use one common display transform; there is no independent alignment or simplification. Only the selected pair loads, starting when the ablation section approaches the viewport.
+
+`comparison-viewer.js` is shared by the results and ablation viewers. Each instance has its own state and camera; controls for one section do not affect the other.
