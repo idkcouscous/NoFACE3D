@@ -2,7 +2,7 @@
 
 NOFACE3D: Noise-Scheduled Focused Anchoring for Controlled Enhancement for 3D Generation.
 
-Live preview: https://18768--standard--b200-dev-box--jamesrose.devspaces.rbx.com/
+Project page: https://idkcouscous.github.io/NoFACE3D/
 
 This source bundle contains the project page and its synchronized 3D comparison viewer, with nine examples across BIGDETAIL, characters, and TexVerse.
 
@@ -16,15 +16,17 @@ This source bundle contains the project page and its synchronized 3D comparison 
 - `index.html`, `comparisons-360.html`, `bigdetail-360.html`: generated pages.
 - `server.py`: local preview server, including compressed mesh delivery.
 
-## Required media
+## Media and hosting
 
-The source bundle does **not** include the model/image assets or PDFs. The original hosted page keeps about 1.14 GB of files in `assets/`. An asset hosting or distribution arrangement is needed before this repository can provide a fully working standalone deployment.
+The repository includes the selected image and model assets, both fast previews and full-quality meshes, and the linked PDFs. `required-media.json` lists these files. Only the selected sample and quality are downloaded by the viewer.
 
-`required-media.json` lists the media paths used by the page. Restore them relative to this directory, keeping the paths in `comparison-manifest.json`. Both fast previews and full-quality models are required for the existing quality selector. The build also needs the original figure-source `paper.pdf`; its figure extraction uses fixed page indices.
+GitHub Pages serves the repository root from `main`; `.nojekyll` enables static-file delivery. The generated pages can be published without running the Python build. The complete site is approximately 948 MB, so keep the GitHub Pages size limit in mind when adding media.
+
+The build uses the original figure-source `paper.pdf` with fixed page indices. Replacing the paper may require updating those indices.
 
 ## Preview
 
-With the media restored, run:
+Run:
 
 ```sh
 python server.py

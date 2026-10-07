@@ -4,6 +4,6 @@ __pycache__/
 .playwright-cli/
 server.log
 server.pid
-assets/
-*.pdf
 preview-*.png
+*.glb.gz
+*.tmp
