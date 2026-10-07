@@ -23,7 +23,7 @@ details{border-top:1px solid var(--line);margin-top:24px;padding-top:14px;font-s
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 </style>
 <link rel="stylesheet" href="bigdetail.css?v=20261006g">
-<link rel="stylesheet" href="bigdetail-gallery.css">
+<link rel="stylesheet" href="bigdetail-gallery.css?v=20261007-unified">
 <script type="importmap">{"imports":{"three":"./vendor/three/build/three.module.js"}}</script>
 </head>
 <body>
@@ -88,11 +88,12 @@ details{border-top:1px solid var(--line);margin-top:24px;padding-top:14px;font-s
 <details><summary>Study details and metrics</summary><p>Human study: 16 reviewers, 200 PAniC-3D assets, 1,188 responses. 12.0% of responses were “neither.” Of judged ratings, 12.2% preferred TRELLIS.2 and 4.5% were ties.</p><div class="tablewrap"><table><caption>PAniC-3D large-scale evaluation, N = 4,892 · Paper Table 4</caption><thead><tr><th>Metric</th><th>TRELLIS.2</th><th>NOFACE3D</th></tr></thead><tbody><tr><td>FID ↓</td><td>13.97</td><td>7.43</td></tr><tr><td>DINO similarity ↑</td><td>0.812</td><td>0.830</td></tr><tr><td>Chamfer × 100 ↓</td><td>3.359</td><td>3.370</td></tr></tbody></table></div><p>See the paper for evaluation protocols, additional baselines, and uncertainty estimates.</p><a href="paper.pdf" target="_blank" rel="noopener">Read the full evaluation ↗</a></details>
 </div></div>
 </section>
-<section class="block" id="benchmark">
-<div class="section-head"><span class="index">06</span><h2>BIGDETAIL benchmark</h2></div>
-<div class="layout"><div class="benchmark"><span class="tag">339 refined assets</span><h3>Objects with annotated detail regions</h3><p>339 refined assets with image crops and 3D region annotations for small structures such as mechanisms, fittings, and connectors.</p><div class="resource-grid"><div class="resource"><b>Conditioning images</b><span>Generated object images and corresponding detail crops.</span></div><div class="resource"><b>Region annotations</b><span>Image rectangles and oriented 3D selection boxes.</span></div><div class="resource"><b>Evaluation protocol</b><span>Paired comparisons of original and refined assets; no artist ground-truth meshes.</span></div></div><div class="actions" style="margin-top:24px"><a class="action" href="#results">View examples ↑</a></div></div></div>
-<section class="image-gallery" aria-labelledby="bigdetail-gallery-heading">
-  <h3 id="bigdetail-gallery-heading">BIGDETAIL images</h3>
+<section class="block" id="benchmark" aria-labelledby="benchmark-heading">
+<div class="section-head"><span class="index">06</span><h2 id="benchmark-heading">BIGDETAIL benchmark</h2></div>
+<div class="benchmark">
+<p class="benchmark-intro">339 refined assets with image crops and 3D region annotations for small structures such as mechanisms, fittings, and connectors.</p>
+<div class="resource-grid"><div class="resource"><b>Conditioning images</b><span>Generated object images and corresponding detail crops.</span></div><div class="resource"><b>Region annotations</b><span>Image rectangles and oriented 3D selection boxes.</span></div><div class="resource"><b>Evaluation protocol</b><span>Paired comparisons of original and refined assets; no artist ground-truth meshes.</span></div></div>
+<div class="image-gallery" role="group" aria-label="BIGDETAIL conditioning image gallery">
   <p class="caption">99 randomly sampled conditioning images.</p>
   <div id="bigdetail-image-grid" class="image-gallery-grid" aria-busy="true"></div>
   <div class="image-gallery-navigation">
@@ -100,8 +101,8 @@ details{border-top:1px solid var(--line);margin-top:24px;padding-top:14px;font-s
     <p id="bigdetail-images-status" role="status" aria-live="polite">Loading images…</p>
     <button id="bigdetail-images-next" class="action" type="button" aria-label="Next three images" aria-controls="bigdetail-image-grid" disabled>Next</button>
   </div>
-</section>
-
+</div>
+</div>
 <div class="limitations"><b>Limitations</b><p>Printed labels and lettering may remain distorted after refinement.</p></div>
 </section>
 <section class="block" id="resources">
