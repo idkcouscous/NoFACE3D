@@ -131,25 +131,30 @@ function disposeRegionHelpers() {
   }
   regionHelpers = [];
 }
+function refinementBoxes(sample) {
+  return sample.refinementBoxes || (sample.refinementBox ? [sample.refinementBox] : []);
+}
 function addRegionHelpers(sample) {
-  if (!sample.refinementBox) return;
-  // Corners preserve oriented selections; older manifests provide axis-aligned bounds.
-  const box = sample.refinementBox;
-  const coordinates = box.corners || Array.from({length:8}, (_, i) =>
-    [box.bounds[(i >> 2) & 1][0], box.bounds[(i >> 1) & 1][1], box.bounds[i & 1][2]]);
-  const points = coordinates.map(point => new THREE.Vector3(...point)
-    .sub(new THREE.Vector3(...sample.frame.center)).multiplyScalar(sample.frame.scale));
-  const edges = [];
-  for (let i = 0; i < 8; i++) for (const bit of [1,2,4]) if (!(i & bit)) edges.push(i, i | bit);
-  regionHelpers = scenes.map(scene => {
-    const geometry = new THREE.BufferGeometry().setFromPoints(points);
-    geometry.setIndex(edges);
-    const helper = new THREE.LineSegments(geometry, new THREE.LineBasicMaterial({color:0xe88126}));
-    helper.material.toneMapped = false;
-    helper.material.depthTest = false; helper.material.depthWrite = false;
-    helper.material.transparent = true; helper.material.opacity = .9;
-    helper.renderOrder = 100; helper.visible = boxesVisible;
-    scene.add(helper); return helper;
+  const boxes = refinementBoxes(sample);
+  root.dataset.regionCount = String(boxes.length);
+  // Keep each oriented selection separate; all panes share the same region toggle.
+  regionHelpers = boxes.flatMap(box => {
+    const coordinates = box.corners || Array.from({length:8}, (_, i) =>
+      [box.bounds[(i >> 2) & 1][0], box.bounds[(i >> 1) & 1][1], box.bounds[i & 1][2]]);
+    const points = coordinates.map(point => new THREE.Vector3(...point)
+      .sub(new THREE.Vector3(...sample.frame.center)).multiplyScalar(sample.frame.scale));
+    const edges = [];
+    for (let i = 0; i < 8; i++) for (const bit of [1,2,4]) if (!(i & bit)) edges.push(i, i | bit);
+    return scenes.map(scene => {
+      const geometry = new THREE.BufferGeometry().setFromPoints(points);
+      geometry.setIndex(edges);
+      const helper = new THREE.LineSegments(geometry, new THREE.LineBasicMaterial({color:0xe88126}));
+      helper.material.toneMapped = false;
+      helper.material.depthTest = false; helper.material.depthWrite = false;
+      helper.material.transparent = true; helper.material.opacity = .9;
+      helper.renderOrder = 100; helper.visible = boxesVisible;
+      scene.add(helper); return helper;
+    });
   });
   root.dataset.boxesVisible = String(boxesVisible);
 }
@@ -234,7 +239,7 @@ async function readGLB(asset, i, signal, version) {
 async function loadSelected(preserveCamera = false) {
   const saved = preserveCamera && loaded ? {position:camera.position.clone(),target:controls.target.clone(),detail:detailView} : null;
   const version = ++generation, sample = samples[selected];
-  const focusDetail = Boolean(sample.refinementBox && detailView);
+  const focusDetail = Boolean(refinementBoxes(sample).length && detailView);
   const models = quality === 'full' && sample.sourceModels ? sample.sourceModels : sample.models;
   abort?.abort(); abort = new AbortController();
   const signal = abort.signal;
@@ -285,7 +290,7 @@ async function loadSelected(preserveCamera = false) {
   }
   overlays.forEach(el => el.hidden = true);
   actionButtons.forEach(b => b.disabled = false);
-  if (boxToggle) boxToggle.disabled = !sample.refinementBox;
+  if (boxToggle) boxToggle.disabled = !refinementBoxes(sample).length;
   stage.setAttribute('aria-busy','false'); root.dataset.state = 'ready';
   root.dataset.verified = 'sha256-and-triangles';
   announce('Views synchronized · drag any model to explore');
