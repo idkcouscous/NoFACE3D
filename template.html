@@ -22,7 +22,7 @@ details{border-top:1px solid var(--line);margin-top:24px;padding-top:14px;font-s
 @media(max-width:500px){.wrap{padding:0 18px}header{align-items:flex-start;flex-direction:column;gap:12px}nav{gap:18px}h1{letter-spacing:-.5px}.subtitle{font-size:18px}.hero-media img{padding:10px 4px}.media-top{padding:10px;font-size:9px}.stats,.resource-grid{grid-template-columns:1fr}.stat strong{font-size:35px}.section-head{gap:10px}.section-head h2{font-size:23px}.image-frame{padding:8px}.viewer-panes{grid-template-columns:1fr}.steps{gap:18px}.section-lead{font-size:14px}.fig-title{flex-wrap:wrap}footer{flex-direction:column}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 </style>
-<link rel="stylesheet" href="bigdetail.css?v=20261008-regions">
+<link rel="stylesheet" href="bigdetail.css?v=20261008-additions">
 <link rel="stylesheet" href="bigdetail-gallery.css?v=20261007-unified">
 <link rel="stylesheet" href="editing.css?v=20261008">
 <link rel="stylesheet" href="ablation.css?v=20261008-comparison-regions">
@@ -44,12 +44,12 @@ details{border-top:1px solid var(--line);margin-top:24px;padding-top:14px;font-s
 </div>
 <section class="block" id="results" data-collection="objects">
 <div class="section-head"><span class="index">01</span><h2>3D comparisons</h2></div>
-<p class="section-lead">Compare TRELLIS.2 and NOFACE3D on nine examples: BIGDETAIL objects, characters, and TexVerse objects.</p>
+<p class="section-lead">Compare TRELLIS.2 and NOFACE3D on twelve examples: BIGDETAIL objects, characters, and TexVerse objects.</p>
 <div class="layout"><div>
 <div class="tabs" role="group" aria-label="Result collection"><button type="button" data-gallery="objects" aria-pressed="true">Objects · BIGDETAIL</button><button type="button" data-gallery="characters" aria-pressed="false">Characters</button><button type="button" data-gallery="texverse" aria-pressed="false">Objects · TexVerse</button></div>
 <div id="bigdetail-viewer" class="bd" aria-label="BIGDETAIL synchronized 3D comparisons">
 <div class="bd-picker" role="group" aria-label="Choose a BIGDETAIL object"></div>
-<div class="bd-heading"><h3 id="bd-title" data-viewer="bd-title">Correction tape dispenser</h3><span id="bd-count" data-viewer="bd-count" class="bd-count">1 / 5</span></div>
+<div class="bd-heading"><h3 id="bd-title" data-viewer="bd-title">Correction tape dispenser</h3><span id="bd-count" data-viewer="bd-count" class="bd-count">1 / 8</span></div>
 <div class="bd-tools">
 <div class="bd-group" role="group" aria-label="Rendering mode"><button type="button" data-bd-action="textured" aria-pressed="true" disabled>Textured</button><button type="button" data-bd-action="clay" aria-pressed="false" disabled>Clay</button><button type="button" data-bd-action="normals" aria-pressed="false" disabled>Normals</button></div>
 <div class="bd-group" role="group" aria-label="Shared camera controls"><button type="button" data-bd-action="full" aria-pressed="true" disabled>Full object</button><button type="button" data-bd-action="detail" aria-pressed="false" disabled>Detail</button><button id="bd-rotate" data-viewer="bd-rotate" type="button" data-bd-action="rotate" aria-pressed="false" disabled>Auto-rotate</button><button type="button" data-bd-action="zoom-in" aria-label="Zoom both models in" disabled>+</button><button type="button" data-bd-action="zoom-out" aria-label="Zoom both models out" disabled>−</button></div>
@@ -63,7 +63,7 @@ details{border-top:1px solid var(--line);margin-top:24px;padding-top:14px;font-s
 </div></div>
 <div class="bd-bottom"><p class="bd-hint">Drag to orbit · right-drag to pan · + / − or Alt+scroll to zoom · cameras always linked</p><p id="bd-status" data-viewer="bd-status" class="bd-status" role="status" aria-live="polite">Scroll to explore the 3D comparison</p></div>
 <div id="bd-error" data-viewer="bd-error" class="bd-error" role="alert" hidden><div id="bd-error-message" data-viewer="bd-error-message"></div><button id="bd-retry" data-viewer="bd-retry" type="button">Retry loading</button></div>
-<div class="bd-print"><img src="{{objects}}" alt="BIGDETAIL static comparisons for printing"><p class="caption">The webpage includes nine interactive comparisons across BIGDETAIL, characters, and TexVerse. This printed preview shows the paper comparison figure.</p></div>
+<div class="bd-print"><img src="{{objects}}" alt="BIGDETAIL static comparisons for printing"><p class="caption">The webpage includes twelve interactive comparisons across BIGDETAIL, characters, and TexVerse. This printed preview shows the paper comparison figure.</p></div>
 </div>
 <script id="bigdetail-data" type="application/json">{{bigdetail_manifest}}</script>
 

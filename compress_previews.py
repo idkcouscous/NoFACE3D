@@ -9,6 +9,8 @@ def compress_previews(root=None):
  for collection in catalog["collections"].values():
   for sample in collection["samples"]:
    for asset in sample["models"]:
+    # External immutable assets are served by their asset branch.
+    if asset["path"].startswith(("https://", "http://")):continue
     path=root/asset["path"]
     packed=Path(str(path)+".gz")
     if not packed.exists() or packed.stat().st_mtime_ns < path.stat().st_mtime_ns:

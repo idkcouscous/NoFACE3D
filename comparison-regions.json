@@ -531,5 +531,251 @@
       ]
     ],
     "detailCenterCheck": 1.1443916996305594e-16
+  },
+  "001_micrometer_torque_wrench": {
+    "field": "region.bbox_3d + annotation rotation",
+    "sources": [
+      {
+        "uri": "s3://core-ai-ml-runtime-us-east-1/jingwen/agent_workspace/L40s-bot/benchmark/bigdetail_200b/refinement_runs/001_micrometer_torque_wrench/c412741a896f48c6aad5b9453c918999/bbox.json",
+        "sha256": "10484e73116e295b86c0fa52fb65e764cedd74e3ca5b00276349c9975df7bb8d"
+      },
+      {
+        "uri": "s3://core-ai-ml-runtime-us-east-1/jingwen/agent_workspace/L40s-bot/benchmark/bigdetail_200b/refinement_bbox/001_micrometer_torque_wrench.json",
+        "sha256": "6103828a5e666218da876e357e463bf29eb09ccecc670cf3db4f63e7835c31b4"
+      }
+    ],
+    "mapping": "Inverse annotation rotation followed by shared mesh display transform and normalization.",
+    "displayTransform": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "corners": [
+      [
+        -0.4097019532569145,
+        0.1601905009503453,
+        -0.5419606465527534
+      ],
+      [
+        -0.4097019532569145,
+        0.1601905009503453,
+        -0.14143667404146196
+      ],
+      [
+        -0.4097019532569145,
+        0.5602650186772435,
+        -0.5419606465527534
+      ],
+      [
+        -0.4097019532569145,
+        0.5602650186772435,
+        -0.14143667404146196
+      ],
+      [
+        0.009745204631449428,
+        0.1601905009503453,
+        -0.5419606465527534
+      ],
+      [
+        0.009745204631449428,
+        0.1601905009503453,
+        -0.14143667404146196
+      ],
+      [
+        0.009745204631449428,
+        0.5602650186772435,
+        -0.5419606465527534
+      ],
+      [
+        0.009745204631449428,
+        0.5602650186772435,
+        -0.14143667404146196
+      ]
+    ]
+  },
+  "201_portable_fire_extinguisher": {
+    "field": "region.bbox_3d + annotation rotation",
+    "sources": [
+      {
+        "uri": "s3://core-ai-ml-runtime-us-east-1/jingwen/agent_workspace/L40s-bot/benchmark/bigdetail_200b/refinement_runs/201_portable_fire_extinguisher/b7ac83600154453a9d08aa53b8f4cd17/bbox.json",
+        "sha256": "afdd535a7f748d969dd4dfa3ce3a11fad51aecd75cc0d64f61c99f8a4ec11191"
+      },
+      {
+        "uri": "s3://core-ai-ml-runtime-us-east-1/jingwen/agent_workspace/L40s-bot/benchmark/bigdetail_200b/refinement_bbox/201_portable_fire_extinguisher.json",
+        "sha256": "7484c2ac497b94c79c6ce7bf72c281b4d21a3c1e6dcc582a3a152ec24fb8a926"
+      }
+    ],
+    "mapping": "Inverse annotation rotation followed by shared mesh display transform and normalization.",
+    "displayTransform": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        -1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "corners": [
+      [
+        -0.1579872931391318,
+        0.2245094029066088,
+        0.17672094346237976
+      ],
+      [
+        -0.1579872931391318,
+        0.526933816301737,
+        0.17672094346237976
+      ],
+      [
+        -0.1579872931391318,
+        0.2245094029066088,
+        -0.21676954383547425
+      ],
+      [
+        -0.1579872931391318,
+        0.526933816301737,
+        -0.21676954383547425
+      ],
+      [
+        0.11865176761680146,
+        0.2245094029066088,
+        0.17672094346237976
+      ],
+      [
+        0.11865176761680146,
+        0.526933816301737,
+        0.17672094346237976
+      ],
+      [
+        0.11865176761680146,
+        0.2245094029066088,
+        -0.21676954383547425
+      ],
+      [
+        0.11865176761680146,
+        0.526933816301737,
+        -0.21676954383547425
+      ]
+    ]
+  },
+  "420_courtyard_gatehouse": {
+    "field": "region.bbox_3d + annotation rotation",
+    "sources": [
+      {
+        "uri": "s3://core-ai-ml-runtime-us-east-1/jingwen/agent_workspace/L40s-bot/benchmark/bigdetail_200b/refinement_runs/420_courtyard_gatehouse/06a55ab3ef2546ef8fe1116745084a47/bbox.json",
+        "sha256": "b94651fe5af47067075b25605a68c4722257c7436974538cf3b49a7d3e44b105"
+      },
+      {
+        "uri": "s3://core-ai-ml-runtime-us-east-1/jingwen/agent_workspace/L40s-bot/benchmark/bigdetail_200b/refinement_bbox/420_courtyard_gatehouse.json",
+        "sha256": "5966636b3b6d3ad8a89e956f3d9a1ac531066c10c028722935288b85068f5370"
+      }
+    ],
+    "mapping": "Inverse annotation rotation followed by shared mesh display transform and normalization.",
+    "displayTransform": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "corners": [
+      [
+        -0.1804431120004943,
+        -0.5025264805971067,
+        0.07297200020395256
+      ],
+      [
+        -0.18343168929201362,
+        -0.5046535849687839,
+        0.34537164845095664
+      ],
+      [
+        -0.17947809958909247,
+        -0.01782655797279524,
+        0.07676749460050543
+      ],
+      [
+        -0.1824666768806118,
+        -0.019953662344472347,
+        0.3491671428475095
+      ],
+      [
+        0.17842362214138108,
+        -0.503271751009231,
+        0.07690341388703975
+      ],
+      [
+        0.17543504484986175,
+        -0.5053988553809082,
+        0.34930306213404383
+      ],
+      [
+        0.1793886345527829,
+        -0.01857182838491953,
+        0.08069890828359262
+      ],
+      [
+        0.17640005726126357,
+        -0.020698932756596636,
+        0.3530985565305967
+      ]
+    ]
   }
 }

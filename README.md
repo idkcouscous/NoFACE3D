@@ -4,7 +4,7 @@ NOFACE3D: Noise-Scheduled Focused Anchoring for Controlled Enhancement for 3D Ge
 
 Project page: https://idkcouscous.github.io/NoFACE3D/
 
-This source bundle contains the project page and its synchronized 3D comparison viewer, with nine examples across BIGDETAIL, characters, and TexVerse.
+This source bundle contains the project page and its synchronized 3D comparison viewer, with twelve examples across BIGDETAIL, characters, and TexVerse.
 
 ## Files
 
@@ -84,6 +84,12 @@ The Wings → head refinement and Engine bay → rockets examples each show thre
 
 ## Comparison refinement regions
 
-All nine 3D comparison samples include the recorded refinement cuboid in both panes, with a **Refinement box** switch. BIGDETAIL uses the rotated `region.bbox_3d` annotations from each refinement run’s `bbox.json`; inverse box rotation preserves the eight corners in the original mesh scene. Character and TexVerse selections use `selection.source_cube_bounds` from `02_semantic_crop/selection.json` in the comparison frame. All regions use the existing shared display normalization, in both preview and full quality. Cuboids do not affect mesh framing or rendering modes.
+All twelve 3D comparison samples include the recorded refinement cuboid in both panes, with a **Refinement box** switch. BIGDETAIL uses the rotated `region.bbox_3d` annotations from each refinement run’s `bbox.json`; inverse box rotation preserves the eight corners in the original mesh scene. Character and TexVerse selections use `selection.source_cube_bounds` from `02_semantic_crop/selection.json` in the comparison frame. All regions use the existing shared display normalization, in both preview and full quality. Cuboids do not affect mesh framing or rendering modes.
 
-`comparison-regions.json` records the exact S3 metadata URIs, hashes, coordinate mapping, and corner coordinates. Alignment round-trip checks and agreement with all nine existing Detail camera centers validate the mappings.
+`comparison-regions.json` records the exact S3 metadata URIs, hashes, coordinate mapping, and corner coordinates. Alignment round-trip checks and agreement with the existing Detail camera centers validate the mappings.
+
+## Additional BIGDETAIL examples
+
+The object picker includes the micrometer torque wrench, portable fire extinguisher, and courtyard gatehouse. Each includes the source conditioning image, a texture-aware fast preview, the unchanged full-quality TRELLIS.2/refined pair, and the matching recorded refinement cuboid. The extinguisher meshes and cuboid share one display rotation to place its long axis upright.
+
+Their images and meshes are hosted at immutable URLs on the `bigdetail-assets` branch to keep the Pages deployment within its size limit. `bigdetail-additions.json` records source URIs and run-selection reasons: the reviewed-good wrench run, the newer completed extinguisher campaign, and the gatehouse primary Detail 1 run. Other gatehouse runs target separate regions. `comparison-regions.json` records their box annotations and coordinate transforms.

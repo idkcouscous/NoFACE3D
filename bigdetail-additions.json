@@ -1,0 +1,158 @@
+{
+  "001_micrometer_torque_wrench": {
+    "run": "c412741a896f48c6aad5b9453c918999",
+    "regionId": "04ee5e89-80e6-4174-90a1-1675eb52355b",
+    "regionLabel": "Part 1",
+    "assets": {
+      "input.jpg": {
+        "path": "assets/bigdetail/001_micrometer_torque_wrench/input.jpg",
+        "source": "s3://core-ai-ml-runtime-us-east-1/jingwen/agent_workspace/L40s-bot/benchmark/bigdetail_200b/images/001_micrometer_torque_wrench.jpg",
+        "bytes": 3193240,
+        "sha256": "949dc9d3c9d72745a46548d73173d801da43ae2b4dc2bb27fba08bc9eff884e8"
+      },
+      "original.glb": {
+        "path": "assets/bigdetail/001_micrometer_torque_wrench/original.glb",
+        "source": "s3://core-ai-ml-runtime-us-east-1/jingwen/agent_workspace/L40s-bot/benchmark/bigdetail_200b/meshes/001_micrometer_torque_wrench.glb",
+        "bytes": 12841440,
+        "sha256": "4256b485e7a7518ce46c15697cac718564623558dff1a57d53dad8d99e2d66e8",
+        "triangles": 294998,
+        "bounds": [
+          [
+            -0.3674352467060089,
+            -0.49973204731941223,
+            -0.5006929636001587
+          ],
+          [
+            0.3673188388347626,
+            0.5004542469978333,
+            0.5006169676780701
+          ]
+        ]
+      },
+      "refined.glb": {
+        "path": "assets/bigdetail/001_micrometer_torque_wrench/refined.glb",
+        "source": "s3://core-ai-ml-runtime-us-east-1/jingwen/agent_workspace/L40s-bot/benchmark/bigdetail_200b/refinement_runs/001_micrometer_torque_wrench/c412741a896f48c6aad5b9453c918999/refined_full.glb",
+        "bytes": 27597720,
+        "sha256": "4e54929c03de1afce50948053440bbc5d26470eb1ae7f9abcf71644c351efe74",
+        "triangles": 845743,
+        "bounds": [
+          [
+            -0.36919325590133667,
+            -0.5005679726600647,
+            -0.5016531348228455
+          ],
+          [
+            0.3681502938270569,
+            0.5021098852157593,
+            0.5014199018478394
+          ]
+        ]
+      }
+    },
+    "selectionReason": "Completed run with a good review verdict."
+  },
+  "201_portable_fire_extinguisher": {
+    "run": "b7ac83600154453a9d08aa53b8f4cd17",
+    "regionId": "32afe628-5310-4596-8ed9-f0602e588548",
+    "regionLabel": "Part 1",
+    "assets": {
+      "input.jpg": {
+        "path": "assets/bigdetail/201_portable_fire_extinguisher/input.jpg",
+        "source": "s3://core-ai-ml-runtime-us-east-1/jingwen/agent_workspace/L40s-bot/benchmark/bigdetail_200b/images/201_portable_fire_extinguisher.jpg",
+        "bytes": 3138620,
+        "sha256": "3c897d96eb89327e229cbeb4f9038c0ca670c7b981b91182ca6afb3605b1fb9a"
+      },
+      "original.glb": {
+        "path": "assets/bigdetail/201_portable_fire_extinguisher/original.glb",
+        "source": "s3://core-ai-ml-runtime-us-east-1/jingwen/agent_workspace/L40s-bot/benchmark/bigdetail_200b/meshes/201_portable_fire_extinguisher.glb",
+        "bytes": 10137836,
+        "sha256": "42b34284915206616b1f08c78175cd9143c40fd3f894b706cfe5358435651e84",
+        "triangles": 274618,
+        "bounds": [
+          [
+            -0.17833322286605835,
+            -0.20980267226696014,
+            -0.5009709596633911
+          ],
+          [
+            0.17836105823516846,
+            0.20941966772079468,
+            0.5009422898292542
+          ]
+        ]
+      },
+      "refined.glb": {
+        "path": "assets/bigdetail/201_portable_fire_extinguisher/refined.glb",
+        "source": "s3://core-ai-ml-runtime-us-east-1/jingwen/agent_workspace/L40s-bot/benchmark/bigdetail_200b/refinement_runs/201_portable_fire_extinguisher/b7ac83600154453a9d08aa53b8f4cd17/refined_full.glb",
+        "bytes": 29207964,
+        "sha256": "6bfba8fb01fec9c912db3353ecab7d6509810e3a154120250f9f8350b54e79d3",
+        "triangles": 983918,
+        "bounds": [
+          [
+            -0.17931008338928223,
+            -0.21077105402946472,
+            -0.5019533038139343
+          ],
+          [
+            0.17933712899684906,
+            0.21036756038665771,
+            0.5008397698402405
+          ]
+        ]
+      }
+    },
+    "selectionReason": "Newer completed campaign run."
+  },
+  "420_courtyard_gatehouse": {
+    "run": "06a55ab3ef2546ef8fe1116745084a47",
+    "regionId": "d2592e2f-6a31-461f-82b0-90156da9bbb5",
+    "regionLabel": "Detail 1",
+    "assets": {
+      "input.jpg": {
+        "path": "assets/bigdetail/420_courtyard_gatehouse/input.jpg",
+        "source": "s3://core-ai-ml-runtime-us-east-1/jingwen/agent_workspace/L40s-bot/benchmark/bigdetail_200b/images/420_courtyard_gatehouse.jpg",
+        "bytes": 4358720,
+        "sha256": "cf1b83ec0eed24bac5d8a53298e3cb2bf371a3002bfb296efc5f0cceb92f603b"
+      },
+      "original.glb": {
+        "path": "assets/bigdetail/420_courtyard_gatehouse/original.glb",
+        "source": "s3://core-ai-ml-runtime-us-east-1/jingwen/agent_workspace/L40s-bot/benchmark/bigdetail_200b/meshes/420_courtyard_gatehouse.glb",
+        "bytes": 14101292,
+        "sha256": "fded4e62a8ef4215d7e507774f45248f6731ae5252c7e75e35acea72c2bb4355",
+        "triangles": 298001,
+        "bounds": [
+          [
+            -0.48142316937446594,
+            -0.5005921125411987,
+            -0.3973560929298401
+          ],
+          [
+            0.4804425835609436,
+            0.5003281235694885,
+            0.3968327045440674
+          ]
+        ]
+      },
+      "refined.glb": {
+        "path": "assets/bigdetail/420_courtyard_gatehouse/refined.glb",
+        "source": "s3://core-ai-ml-runtime-us-east-1/jingwen/agent_workspace/L40s-bot/benchmark/bigdetail_200b/refinement_runs/420_courtyard_gatehouse/06a55ab3ef2546ef8fe1116745084a47/refined_full.glb",
+        "bytes": 27779100,
+        "sha256": "7ca37d5c3dfece3c17ed3e842b7f97bae3d9732b1caf038dc42b2e9b7225b043",
+        "triangles": 917085,
+        "bounds": [
+          [
+            -0.48187321424484253,
+            -0.501270055770874,
+            -0.39768147468566895
+          ],
+          [
+            0.4810527265071869,
+            0.5007455945014954,
+            0.3975817859172821
+          ]
+        ]
+      }
+    },
+    "selectionReason": "Completed primary Detail 1 region run; other runs target separate regions."
+  }
+}
