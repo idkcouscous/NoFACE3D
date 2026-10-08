@@ -75,3 +75,9 @@ The four displayed GLBs are stored unchanged on the `ablation-assets` branch and
 `comparison-viewer.js` is shared by the results and ablation viewers. Each instance has its own state and camera; controls for one section do not affect the other.
 
 The ablation viewer’s **Detail** button frames the recorded head-and-neck refinement cube identically in both panes. **Refinement box** toggles matching 3D outlines independently of the camera and rendering mode. Detail mode and outline visibility persist when switching samples. Bounds come from `selection.source_cube_bounds` in the inference metadata; `ablation-regions.json` records provenance and the alignment cross-check. Both outlines use the same display transform as the meshes.
+
+## Sequential editing viewer
+
+The Wings → head refinement and Engine bay → rockets examples each show three synchronized stages: the starting TRELLIS.2 mesh, edit 1, and edit 2 (final). A single camera controls all three views; rendering mode, orbit, pan, zoom, and auto-rotation are shared. One sequence loads at a time, with three columns on desktop and stacked views on mobile. The paper figures remain available below the viewer.
+
+`editing-manifest.json` records the supplied S3 sources, immutable URLs on the `editing-assets` branch, SHA-256 hashes, byte sizes, and triangle counts. The six GLBs are preserved without simplification. Each sequence uses one display transform derived from the union of all three mesh bounds, preserving their relative scale and alignment. The unused car variant `custom-cf1f543efaf6_439c-stock_mesh.glb` is excluded.

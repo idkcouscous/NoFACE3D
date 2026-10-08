@@ -1,0 +1,172 @@
+{
+  "version": 1,
+  "collections": {
+    "editing": {
+      "label": "Sequential editing",
+      "samples": [
+        {
+          "id": "wings",
+          "label": "Wings \u2192 head refinement",
+          "stageLabels": [
+            "TRELLIS.2 \u00b7 Starting mesh",
+            "Edit 1 \u00b7 Wings added",
+            "Edit 2 \u00b7 Head refined (final)"
+          ],
+          "models": [
+            {
+              "source": "s3://core-ai-ml-runtime-us-east-1/jamesrose/inference-results/iclr_editing_samples/sample3/42eadfcd93e66424-stock_mesh.glb",
+              "bytes": 67279496,
+              "sha256": "d882829171ecf83f4f149dd78ecab111ecf8a0629e226634564c720bc4712434",
+              "triangles": 954616,
+              "bounds": [
+                [
+                  -0.3410649001598358,
+                  -0.5009764432907104,
+                  -0.19004809856414795
+                ],
+                [
+                  0.34128665924072266,
+                  0.5007739067077637,
+                  0.19086229801177979
+                ]
+              ],
+              "path": "https://raw.githubusercontent.com/idkcouscous/NoFACE3D/bee0d77250ee808993f35f37328bc1d5d163e2b1/wings/0.glb"
+            },
+            {
+              "source": "s3://core-ai-ml-runtime-us-east-1/jamesrose/inference-results/iclr_editing_samples/sample3/middle.glb",
+              "bytes": 72468444,
+              "sha256": "99dd535df84d30a8329449c1ebf7bb8fc34560211c85eadf8a9677097e91298b",
+              "triangles": 969048,
+              "bounds": [
+                [
+                  -0.5008531808853149,
+                  -0.5009759664535522,
+                  -0.20817317068576813
+                ],
+                [
+                  0.5008235573768616,
+                  0.5005592107772827,
+                  0.19098997116088867
+                ]
+              ],
+              "path": "https://raw.githubusercontent.com/idkcouscous/NoFACE3D/bee0d77250ee808993f35f37328bc1d5d163e2b1/wings/1.glb"
+            },
+            {
+              "source": "s3://core-ai-ml-runtime-us-east-1/jamesrose/inference-results/iclr_editing_samples/sample3/42eadfcd93e6-r1-b233ddcb-voxel_to_mesh_remesh_1024.glb",
+              "bytes": 72951736,
+              "sha256": "8f57688ace989b08ae2ceba68f99262d8809689eb39add555a7994e57990de88",
+              "triangles": 982956,
+              "bounds": [
+                [
+                  -0.5008301734924316,
+                  -0.5009751319885254,
+                  -0.20815864205360413
+                ],
+                [
+                  0.500810980796814,
+                  0.5007535815238953,
+                  0.19098985195159912
+                ]
+              ],
+              "path": "https://raw.githubusercontent.com/idkcouscous/NoFACE3D/bee0d77250ee808993f35f37328bc1d5d163e2b1/wings/2.glb"
+            }
+          ],
+          "view": [
+            0,
+            0.1,
+            3
+          ],
+          "frame": {
+            "center": [
+              -1.481175422668457e-05,
+              -0.00010126829147338867,
+              -0.008591599762439728
+            ],
+            "scale": 1.9965054167468437
+          }
+        },
+        {
+          "id": "car",
+          "label": "Engine bay \u2192 rockets",
+          "stageLabels": [
+            "TRELLIS.2 \u00b7 Starting mesh",
+            "Edit 1 \u00b7 Engine bay exposed",
+            "Edit 2 \u00b7 Rear rockets added (final)"
+          ],
+          "models": [
+            {
+              "source": "s3://core-ai-ml-runtime-us-east-1/jamesrose/inference-results/iclr_editing_samples/sample6-car2/custom-cf1f543efaf6_2082-stock_mesh.glb",
+              "bytes": 69861448,
+              "sha256": "de9120659f734d010a6794cef91bd75109f2b1a368ff3ca8b3c0b67f5f464a63",
+              "triangles": 929615,
+              "bounds": [
+                [
+                  -0.21370038390159607,
+                  -0.13523373007774353,
+                  -0.45056402683258057
+                ],
+                [
+                  0.21385657787322998,
+                  0.134804829955101,
+                  0.4509637653827667
+                ]
+              ],
+              "path": "https://raw.githubusercontent.com/idkcouscous/NoFACE3D/bee0d77250ee808993f35f37328bc1d5d163e2b1/car/0.glb"
+            },
+            {
+              "source": "s3://core-ai-ml-runtime-us-east-1/jamesrose/inference-results/iclr_editing_samples/sample6-car2/custom-cf1f543efaf6_b991-stock_mesh.glb",
+              "bytes": 75048944,
+              "sha256": "b02b7e65bc54e1f9dac71bb99874711f5b25d268204e1da54371841c189b53f3",
+              "triangles": 941490,
+              "bounds": [
+                [
+                  -0.21377360820770264,
+                  -0.13525742292404175,
+                  -0.4504666030406952
+                ],
+                [
+                  0.2139165699481964,
+                  0.13481007516384125,
+                  0.45071959495544434
+                ]
+              ],
+              "path": "https://raw.githubusercontent.com/idkcouscous/NoFACE3D/bee0d77250ee808993f35f37328bc1d5d163e2b1/car/1.glb"
+            },
+            {
+              "source": "s3://core-ai-ml-runtime-us-east-1/jamesrose/inference-results/iclr_editing_samples/sample6-car2/custom-cf1f5-r1-11990c3b-voxel_to_mesh_remesh_1024.glb",
+              "bytes": 74632608,
+              "sha256": "77eb27c917685b54a836dc8519ac19661125d89fdceedd6e7c21874239efbe39",
+              "triangles": 935808,
+              "bounds": [
+                [
+                  -0.21938051283359528,
+                  -0.13524259626865387,
+                  -0.4504971206188202
+                ],
+                [
+                  0.21971304714679718,
+                  0.24574464559555054,
+                  0.45076972246170044
+                ]
+              ],
+              "path": "https://raw.githubusercontent.com/idkcouscous/NoFACE3D/bee0d77250ee808993f35f37328bc1d5d163e2b1/car/2.glb"
+            }
+          ],
+          "view": [
+            3,
+            2,
+            3
+          ],
+          "frame": {
+            "center": [
+              0.00016626715660095215,
+              0.055243611335754395,
+              0.0001998692750930786
+            ],
+            "scale": 2.21845628861352
+          }
+        }
+      ]
+    }
+  }
+}

@@ -13,6 +13,7 @@ for name,(page,n) in selections.items():
  t=t.replace("{{"+name+"}}","data:image/jpeg;base64,"+base64.b64encode(data).decode())
 t=t.replace("{{bigdetail_manifest}}",(root/"comparison-manifest.json").read_text().strip())
 t=t.replace("{{ablation_manifest}}",(root/"ablation-manifest.json").read_text().strip())
+t=t.replace("{{editing_manifest}}",(root/"editing-manifest.json").read_text().strip())
 (root/"index.html").write_text(t)
 (root/"bigdetail-360.html").write_text(t)
 (root/"comparisons-360.html").write_text(t)

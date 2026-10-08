@@ -50,8 +50,12 @@ function selectionUI() {
 
   root.setAttribute('aria-label', collections[collection].label + ' synchronized 3D comparisons');
   root.closest('section').dataset.collection = collection;
-  element('bd-original-label').textContent = sample.baselineLabel || 'TRELLIS.2';
-  element('bd-refined-label').textContent = sample.refinedLabel || 'Ours · NOFACE3D';
+  if (element('bd-original-label')) element('bd-original-label').textContent = sample.baselineLabel || 'TRELLIS.2';
+  if (element('bd-refined-label')) element('bd-refined-label').textContent = sample.refinedLabel || 'Ours · NOFACE3D';
+  root.querySelectorAll('[data-bd-stage-label]').forEach((label, i) => {
+    label.textContent = sample.stageLabels[i];
+    slots[i].setAttribute('aria-label', sample.stageLabels[i] + ' — drag to rotate all views');
+  });
   picker.setAttribute('aria-label', 'Choose a sample: ' + collections[collection].label);
   picker.dataset.size = String(samples.length);
   collectionButtons.forEach(b => b.setAttribute('aria-pressed', String(b.dataset.gallery === collection)));
@@ -278,7 +282,7 @@ async function loadSelected(preserveCamera = false) {
   if (boxToggle) boxToggle.disabled = !sample.refinementBox;
   stage.setAttribute('aria-busy','false'); root.dataset.state = 'ready';
   root.dataset.verified = 'sha256-and-triangles';
-  announce('Views synchronized · drag either model to explore');
+  announce('Views synchronized · drag any model to explore');
   dirty = true;
 }
 function render(time) {
@@ -331,7 +335,7 @@ function start() {
     },{passive:false});
     const pmrem = new THREE.PMREMGenerator(renderer), room = new RoomEnvironment();
     const environment = pmrem.fromScene(room,.04).texture; room.dispose(); pmrem.dispose();
-    scenes = [0,1].map(() => {
+    scenes = slots.map(() => {
       const scene = new THREE.Scene(); scene.background = new THREE.Color(0xf3f4ee);
       scene.environment = environment; scene.environmentIntensity=.85;
       scene.add(new THREE.HemisphereLight(0xffffff,0x7b826d,1.5));

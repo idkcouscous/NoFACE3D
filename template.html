@@ -24,7 +24,8 @@ details{border-top:1px solid var(--line);margin-top:24px;padding-top:14px;font-s
 </style>
 <link rel="stylesheet" href="bigdetail.css?v=20261006g">
 <link rel="stylesheet" href="bigdetail-gallery.css?v=20261007-unified">
-<link rel="stylesheet" href="ablation.css?v=20261007-regions">
+<link rel="stylesheet" href="editing.css?v=20261008">
+<link rel="stylesheet" href="ablation.css?v=20261008-editing">
 <script type="importmap">{"imports":{"three":"./vendor/three/build/three.module.js"}}</script>
 </head>
 <body>
@@ -115,7 +116,38 @@ details{border-top:1px solid var(--line);margin-top:24px;padding-top:14px;font-s
 <section class="block" id="editing">
 <div class="section-head"><span class="index">04</span><h2>Sequential editing</h2></div>
 <p class="section-lead">Edited conditioning crops guide local changes to the mesh. These examples apply two edits in sequence.</p>
+<div id="editing-viewer" class="bd" aria-label="Sequential editing synchronized 3D comparisons">
+  <div class="bd-picker" role="group" aria-label="Choose an editing sequence"></div>
+  <div class="bd-heading"><h3 data-viewer="bd-title">Wings → head refinement</h3><span data-viewer="bd-count" class="bd-count">1 / 2</span></div>
+  <div class="bd-tools">
+    <div class="bd-group" role="group" aria-label="Editing rendering mode">
+      <button type="button" data-bd-action="textured" aria-pressed="true" disabled>Textured</button>
+      <button type="button" data-bd-action="clay" aria-pressed="false" disabled>Clay</button>
+      <button type="button" data-bd-action="normals" aria-pressed="false" disabled>Normals</button>
+    </div>
+    <div class="bd-group" role="group" aria-label="Editing shared camera controls">
+      <button type="button" data-bd-action="full" aria-pressed="true" disabled>Full object</button>
+      <button data-viewer="bd-rotate" type="button" data-bd-action="rotate" aria-pressed="false" disabled>Auto-rotate</button>
+      <button type="button" data-bd-action="zoom-in" aria-label="Zoom all editing views in" disabled>+</button>
+      <button type="button" data-bd-action="zoom-out" aria-label="Zoom all editing views out" disabled>−</button>
+    </div>
+  </div>
+  <div class="bd-pair">
+    <div data-viewer="bd-stage" class="bd-stage" aria-label="Drag any model to rotate all three editing views" aria-busy="false">
+      <div class="bd-viewport"><span class="editing-stage-label" data-bd-stage-label>TRELLIS.2 · Starting mesh</span><div class="bd-overlay">Scroll to load the sequence</div></div>
+      <div class="bd-viewport"><span class="editing-stage-label" data-bd-stage-label>Edit 1 · Wings added</span><div class="bd-overlay">Scroll to load the sequence</div></div>
+      <div class="bd-viewport"><span class="editing-stage-label" data-bd-stage-label>Edit 2 · Head refined (final)</span><div class="bd-overlay">Scroll to load the sequence</div></div>
+    </div>
+  </div>
+  <div class="bd-bottom"><p class="bd-hint">Drag to orbit · right-drag to pan · + / − or Alt+scroll to zoom · all three cameras linked</p><p data-viewer="bd-status" class="bd-status" role="status" aria-live="polite">Scroll to load the sequence</p></div>
+  <div data-viewer="bd-error" class="bd-error" role="alert" hidden><div data-viewer="bd-error-message"></div><button data-viewer="bd-retry" type="button">Retry loading</button></div>
+</div>
+<script id="editing-data" type="application/json">{{editing_manifest}}</script>
+
+<details><summary>Paper figures</summary>
 <div class="layout"><div><div class="tabs" role="group" aria-label="Editing example"><button type="button" data-edit="hat" aria-pressed="true">Hat → robotic legs</button><button type="button" data-edit="wings" aria-pressed="false">Wings → head refinement</button><button type="button" data-edit="car" aria-pressed="false">Engine bay → rockets</button></div><div class="image-frame"><div class="edit-frame"><img id="edit-image" src="{{hat}}" alt="Figure 6: a character receives a hat, then robotic legs." loading="lazy"></div><p id="edit-caption" class="caption" aria-live="polite">Figure 6 · The second edit targets the legs while retaining the earlier hat edit. Conditioning crops are edited with Gemini Flash Image.</p></div></div></div>
+
+</details>
 </section>
 <section class="block" id="evaluation">
 <div class="section-head"><span class="index">05</span><h2>Evaluation</h2></div>
@@ -159,7 +191,8 @@ document.querySelectorAll("[data-edit]").forEach(function(x){x.setAttribute("ari
 })});
 })();
 </script>
-<script type="module" src="bigdetail.js?v=20261007-regions"></script>
+<script type="module" src="bigdetail.js?v=20261008-editing"></script>
 <script type="module" src="bigdetail-gallery.js"></script>
-<script type="module" src="ablation.js?v=20261007-regions"></script>
+<script type="module" src="ablation.js?v=20261008-editing"></script>
+<script type="module" src="editing.js?v=20261008"></script>
 </body></html>

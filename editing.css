@@ -1,0 +1,8 @@
+#editing-viewer .bd-picker{grid-template-columns:repeat(2,minmax(0,1fr))}
+#editing-viewer .bd-picker button{justify-content:center;text-align:center;min-height:44px}
+#editing-viewer .bd-stage{grid-template-columns:repeat(3,minmax(0,1fr));height:430px}
+#editing-viewer .bd-viewport:not(:last-child){border-right:1px solid var(--line)}
+#editing-viewer .editing-stage-label{position:absolute;top:0;left:0;right:0;padding:11px 12px;background:#ffffffed;border-bottom:1px solid var(--line);font-size:12px;font-weight:600;pointer-events:none;z-index:2}
+#editing-viewer .bd-viewport:last-child .editing-stage-label{color:var(--green)}
+@media(max-width:620px){#editing-viewer .bd-stage{grid-template-columns:1fr;grid-template-rows:repeat(3,minmax(0,1fr));height:900px}#editing-viewer .bd-viewport:not(:last-child){border-right:0;border-bottom:1px solid var(--line)}}
+@media print{#editing-viewer{display:none}}
