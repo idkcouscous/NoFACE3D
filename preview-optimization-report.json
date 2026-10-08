@@ -1,0 +1,422 @@
+[
+  {
+    "collection": "characters",
+    "sample": "5e4e28712618a1eb",
+    "role": "original",
+    "source": "assets/characters/5e4e28712618a1eb/original.glb",
+    "source_bytes": 66227804,
+    "source_triangles": 984899,
+    "path": "assets/preview-100k/characters/5e4e28712618a1eb/original.glb",
+    "bytes": 6835568,
+    "sha256": "053943c9b00bbcc6d14cefbb7adf36ff0c432eb1dcd777d8962e09377289c458",
+    "triangles": 99999,
+    "vertices": 117508,
+    "combined_attribute_error": 0.002183460397645831,
+    "error_limit": 0.003,
+    "textures": [
+      {
+        "source_dimensions": [
+          4096,
+          4096
+        ],
+        "preview_dimensions": [
+          2048,
+          2048
+        ],
+        "source_bytes": 23364372,
+        "preview_bytes": 1525040
+      },
+      {
+        "source_dimensions": [
+          4096,
+          4096
+        ],
+        "preview_dimensions": [
+          2048,
+          2048
+        ],
+        "source_bytes": 7996604,
+        "preview_bytes": 348546
+      }
+    ],
+    "seconds": 30.74
+  },
+  {
+    "collection": "characters",
+    "sample": "5e4e28712618a1eb",
+    "role": "refined",
+    "source": "assets/characters/5e4e28712618a1eb/refined.glb",
+    "source_bytes": 69035416,
+    "source_triangles": 976783,
+    "path": "assets/preview-100k/characters/5e4e28712618a1eb/refined.glb",
+    "bytes": 6895096,
+    "sha256": "72a4def1176c5dea3a712aeafd3cfa9d66907f3981266824b1ba6019458ac192",
+    "triangles": 99993,
+    "vertices": 115574,
+    "combined_attribute_error": 0.0017931999173015356,
+    "error_limit": 0.003,
+    "textures": [
+      {
+        "source_dimensions": [
+          4096,
+          4096
+        ],
+        "preview_dimensions": [
+          2048,
+          2048
+        ],
+        "source_bytes": 23840428,
+        "preview_bytes": 1498808
+      },
+      {
+        "source_dimensions": [
+          4096,
+          4096
+        ],
+        "preview_dimensions": [
+          2048,
+          2048
+        ],
+        "source_bytes": 10575440,
+        "preview_bytes": 496268
+      }
+    ],
+    "seconds": 26.9
+  },
+  {
+    "collection": "characters",
+    "sample": "cb621c03209c5ee8",
+    "role": "original",
+    "source": "assets/characters/cb621c03209c5ee8/original.glb",
+    "source_bytes": 65677040,
+    "source_triangles": 958966,
+    "path": "assets/preview-100k/characters/cb621c03209c5ee8/original.glb",
+    "bytes": 7623104,
+    "sha256": "8e57d914994e4b7a0c6cbe2bcf146cdc1fb12c4f74b9db98157214c73f94ba57",
+    "triangles": 110880,
+    "vertices": 139630,
+    "combined_attribute_error": 0.0029916742350906134,
+    "error_limit": 0.003,
+    "textures": [
+      {
+        "source_dimensions": [
+          4096,
+          4096
+        ],
+        "preview_dimensions": [
+          2048,
+          2048
+        ],
+        "source_bytes": 25092580,
+        "preview_bytes": 1642390
+      },
+      {
+        "source_dimensions": [
+          4096,
+          4096
+        ],
+        "preview_dimensions": [
+          2048,
+          2048
+        ],
+        "source_bytes": 5760256,
+        "preview_bytes": 180256
+      }
+    ],
+    "seconds": 29.43
+  },
+  {
+    "collection": "characters",
+    "sample": "cb621c03209c5ee8",
+    "role": "refined",
+    "source": "assets/characters/cb621c03209c5ee8/refined.glb",
+    "source_bytes": 71205900,
+    "source_triangles": 989805,
+    "path": "assets/preview-100k/characters/cb621c03209c5ee8/refined.glb",
+    "bytes": 8143632,
+    "sha256": "4e4fd85b081d00014a70045134354de568e527f86e65f5b1ffb4a789fd142771",
+    "triangles": 110354,
+    "vertices": 137690,
+    "combined_attribute_error": 0.0029685678891837597,
+    "error_limit": 0.003,
+    "textures": [
+      {
+        "source_dimensions": [
+          4096,
+          4096
+        ],
+        "preview_dimensions": [
+          2048,
+          2048
+        ],
+        "source_bytes": 25696628,
+        "preview_bytes": 1676556
+      },
+      {
+        "source_dimensions": [
+          4096,
+          4096
+        ],
+        "preview_dimensions": [
+          2048,
+          2048
+        ],
+        "source_bytes": 9532984,
+        "preview_bytes": 735006
+      }
+    ],
+    "seconds": 27.83
+  },
+  {
+    "collection": "characters",
+    "sample": "f852d8d6c78824a3",
+    "role": "original",
+    "source": "assets/characters/f852d8d6c78824a3/original.glb",
+    "source_bytes": 66045788,
+    "source_triangles": 945251,
+    "path": "assets/preview-100k/characters/f852d8d6c78824a3/original.glb",
+    "bytes": 6278808,
+    "sha256": "64b89274d18d220cd6a19e0a187ea7876b1eae14fb3858d04a09e2ab1bcb993b",
+    "triangles": 99999,
+    "vertices": 113234,
+    "combined_attribute_error": 0.0012379154795780778,
+    "error_limit": 0.003,
+    "textures": [
+      {
+        "source_dimensions": [
+          4096,
+          4096
+        ],
+        "preview_dimensions": [
+          2048,
+          2048
+        ],
+        "source_bytes": 22934664,
+        "preview_bytes": 1252084
+      },
+      {
+        "source_dimensions": [
+          4096,
+          4096
+        ],
+        "preview_dimensions": [
+          2048,
+          2048
+        ],
+        "source_bytes": 9836136,
+        "preview_bytes": 201510
+      }
+    ],
+    "seconds": 13.07
+  },
+  {
+    "collection": "characters",
+    "sample": "f852d8d6c78824a3",
+    "role": "refined",
+    "source": "assets/characters/f852d8d6c78824a3/refined.glb",
+    "source_bytes": 68769148,
+    "source_triangles": 979565,
+    "path": "assets/preview-100k/characters/f852d8d6c78824a3/refined.glb",
+    "bytes": 6682584,
+    "sha256": "74c9171d1e233c6b5f80405ca8b658cbc09efd1bcede9801b5dd7a19b69f2d8a",
+    "triangles": 99987,
+    "vertices": 113254,
+    "combined_attribute_error": 0.0014647181378677487,
+    "error_limit": 0.003,
+    "textures": [
+      {
+        "source_dimensions": [
+          4096,
+          4096
+        ],
+        "preview_dimensions": [
+          2048,
+          2048
+        ],
+        "source_bytes": 23537128,
+        "preview_bytes": 1456660
+      },
+      {
+        "source_dimensions": [
+          4096,
+          4096
+        ],
+        "preview_dimensions": [
+          2048,
+          2048
+        ],
+        "source_bytes": 10577552,
+        "preview_bytes": 400214
+      }
+    ],
+    "seconds": 24.78
+  },
+  {
+    "collection": "characters",
+    "sample": "1fb4d3a8c92c171a",
+    "role": "original",
+    "source": "assets/characters/1fb4d3a8c92c171a/original.glb",
+    "source_bytes": 68529656,
+    "source_triangles": 993755,
+    "path": "assets/preview-100k/characters/1fb4d3a8c92c171a/original.glb",
+    "bytes": 11313128,
+    "sha256": "a4507a55b05d05028aadecbb27752d69062dc1783d5a4eaf8e2325732735f51c",
+    "triangles": 183014,
+    "vertices": 237477,
+    "combined_attribute_error": 0.002999564865604043,
+    "error_limit": 0.003,
+    "textures": [
+      {
+        "source_dimensions": [
+          4096,
+          4096
+        ],
+        "preview_dimensions": [
+          2048,
+          2048
+        ],
+        "source_bytes": 23465656,
+        "preview_bytes": 1492818
+      },
+      {
+        "source_dimensions": [
+          4096,
+          4096
+        ],
+        "preview_dimensions": [
+          2048,
+          2048
+        ],
+        "source_bytes": 7345432,
+        "preview_bytes": 23134
+      }
+    ],
+    "seconds": 30.16
+  },
+  {
+    "collection": "characters",
+    "sample": "1fb4d3a8c92c171a",
+    "role": "refined",
+    "source": "assets/characters/1fb4d3a8c92c171a/refined.glb",
+    "source_bytes": 67856120,
+    "source_triangles": 981039,
+    "path": "assets/preview-100k/characters/1fb4d3a8c92c171a/refined.glb",
+    "bytes": 10654004,
+    "sha256": "23f7a0087ed846b96593e1e1d3a1dbe804a3da35e1656132aece2dcba7678591",
+    "triangles": 172337,
+    "vertices": 218364,
+    "combined_attribute_error": 0.0029905163682997227,
+    "error_limit": 0.003,
+    "textures": [
+      {
+        "source_dimensions": [
+          4096,
+          4096
+        ],
+        "preview_dimensions": [
+          2048,
+          2048
+        ],
+        "source_bytes": 23793968,
+        "preview_bytes": 1556620
+      },
+      {
+        "source_dimensions": [
+          4096,
+          4096
+        ],
+        "preview_dimensions": [
+          2048,
+          2048
+        ],
+        "source_bytes": 7266832,
+        "preview_bytes": 39950
+      }
+    ],
+    "seconds": 31.1
+  },
+  {
+    "collection": "characters",
+    "sample": "29a71d27e6324f17",
+    "role": "original",
+    "source": "assets/characters/29a71d27e6324f17/original.glb",
+    "source_bytes": 68481528,
+    "source_triangles": 997157,
+    "path": "assets/preview-100k/characters/29a71d27e6324f17/original.glb",
+    "bytes": 8408840,
+    "sha256": "d936f4827f4856e53f4227dfb3c757ab54287747cca0ad5aa7483a1f11498d75",
+    "triangles": 129086,
+    "vertices": 160822,
+    "combined_attribute_error": 0.002958038356155157,
+    "error_limit": 0.003,
+    "textures": [
+      {
+        "source_dimensions": [
+          4096,
+          4096
+        ],
+        "preview_dimensions": [
+          2048,
+          2048
+        ],
+        "source_bytes": 25617492,
+        "preview_bytes": 1690272
+      },
+      {
+        "source_dimensions": [
+          4096,
+          4096
+        ],
+        "preview_dimensions": [
+          2048,
+          2048
+        ],
+        "source_bytes": 6380672,
+        "preview_bytes": 21496
+      }
+    ],
+    "seconds": 29.78
+  },
+  {
+    "collection": "characters",
+    "sample": "29a71d27e6324f17",
+    "role": "refined",
+    "source": "assets/characters/29a71d27e6324f17/refined.glb",
+    "source_bytes": 67184520,
+    "source_triangles": 956340,
+    "path": "assets/preview-100k/characters/29a71d27e6324f17/refined.glb",
+    "bytes": 7872016,
+    "sha256": "53ae1d73b2d5566252d96379a3a50fb6890fff4681570c1928347b3df8fb5b8d",
+    "triangles": 116159,
+    "vertices": 144620,
+    "combined_attribute_error": 0.0029655208345502615,
+    "error_limit": 0.003,
+    "textures": [
+      {
+        "source_dimensions": [
+          4096,
+          4096
+        ],
+        "preview_dimensions": [
+          2048,
+          2048
+        ],
+        "source_bytes": 25321756,
+        "preview_bytes": 1681740
+      },
+      {
+        "source_dimensions": [
+          4096,
+          4096
+        ],
+        "preview_dimensions": [
+          2048,
+          2048
+        ],
+        "source_bytes": 7144244,
+        "preview_bytes": 166754
+      }
+    ],
+    "seconds": 30.37
+  }
+]
