@@ -22,10 +22,10 @@ details{border-top:1px solid var(--line);margin-top:24px;padding-top:14px;font-s
 @media(max-width:500px){.wrap{padding:0 18px}header{align-items:flex-start;flex-direction:column;gap:12px}nav{gap:18px}h1{letter-spacing:-.5px}.subtitle{font-size:18px}.hero-media img{padding:10px 4px}.media-top{padding:10px;font-size:9px}.stats,.resource-grid{grid-template-columns:1fr}.stat strong{font-size:35px}.section-head{gap:10px}.section-head h2{font-size:23px}.image-frame{padding:8px}.viewer-panes{grid-template-columns:1fr}.steps{gap:18px}.section-lead{font-size:14px}.fig-title{flex-wrap:wrap}footer{flex-direction:column}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 </style>
-<link rel="stylesheet" href="bigdetail.css?v=20261006g">
+<link rel="stylesheet" href="bigdetail.css?v=20261008-regions">
 <link rel="stylesheet" href="bigdetail-gallery.css?v=20261007-unified">
 <link rel="stylesheet" href="editing.css?v=20261008">
-<link rel="stylesheet" href="ablation.css?v=20261008-editing">
+<link rel="stylesheet" href="ablation.css?v=20261008-comparison-regions">
 <script type="importmap">{"imports":{"three":"./vendor/three/build/three.module.js"}}</script>
 </head>
 <body>
@@ -54,6 +54,7 @@ details{border-top:1px solid var(--line);margin-top:24px;padding-top:14px;font-s
 <div class="bd-group" role="group" aria-label="Rendering mode"><button type="button" data-bd-action="textured" aria-pressed="true" disabled>Textured</button><button type="button" data-bd-action="clay" aria-pressed="false" disabled>Clay</button><button type="button" data-bd-action="normals" aria-pressed="false" disabled>Normals</button></div>
 <div class="bd-group" role="group" aria-label="Shared camera controls"><button type="button" data-bd-action="full" aria-pressed="true" disabled>Full object</button><button type="button" data-bd-action="detail" aria-pressed="false" disabled>Detail</button><button id="bd-rotate" data-viewer="bd-rotate" type="button" data-bd-action="rotate" aria-pressed="false" disabled>Auto-rotate</button><button type="button" data-bd-action="zoom-in" aria-label="Zoom both models in" disabled>+</button><button type="button" data-bd-action="zoom-out" aria-label="Zoom both models out" disabled>−</button></div>
 </div>
+<label class="bd-box-toggle"><input type="checkbox" role="switch" data-bd-box-toggle checked disabled>Refinement box</label>
 <div class="bd-quality"><div class="bd-group" role="group" aria-label="Mesh quality"><button type="button" data-bd-quality="preview" aria-pressed="true">Fast preview</button><button type="button" data-bd-quality="full" aria-pressed="false">Full quality</button></div><p id="bd-quality-note" data-viewer="bd-quality-note">Simplified previews. Use Full quality to inspect the original geometry and textures.</p></div>
 <div class="bd-layout">
 <figure class="bd-input"><figcaption>Input image</figcaption><a id="bd-input-link" data-viewer="bd-input-link" href="assets/bigdetail/115_correction_tape_dispenser/input.jpg" target="_blank" rel="noopener" aria-label="Open full-resolution conditioning image"><img id="bd-input" data-viewer="bd-input" src="assets/bigdetail/115_correction_tape_dispenser/input.jpg" alt="Conditioning image: correction tape dispenser" loading="lazy"></a></figure>
@@ -191,8 +192,8 @@ document.querySelectorAll("[data-edit]").forEach(function(x){x.setAttribute("ari
 })});
 })();
 </script>
-<script type="module" src="bigdetail.js?v=20261008-editing"></script>
+<script type="module" src="bigdetail.js?v=20261008-comparison-regions"></script>
 <script type="module" src="bigdetail-gallery.js"></script>
-<script type="module" src="ablation.js?v=20261008-editing"></script>
-<script type="module" src="editing.js?v=20261008"></script>
+<script type="module" src="ablation.js?v=20261008-comparison-regions"></script>
+<script type="module" src="editing.js?v=20261008-regions"></script>
 </body></html>

@@ -48,3 +48,7 @@
 .bd-quality button[aria-pressed="true"] { background:var(--green);border-color:var(--green);color:white; }
 .bd-quality p { font-size:11px;color:var(--sub);margin:0; }
 @media print { .bd-quality { display:none; } }
+
+.bd .bd-box-toggle{display:flex;align-items:center;gap:8px;width:fit-content;min-height:42px;margin:0 0 12px;font-size:13px;cursor:pointer}
+.bd .bd-box-toggle input{width:18px;height:18px;accent-color:var(--green);cursor:pointer}
+@media print{.bd .bd-box-toggle{display:none}}

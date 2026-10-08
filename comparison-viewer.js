@@ -133,12 +133,18 @@ function disposeRegionHelpers() {
 }
 function addRegionHelpers(sample) {
   if (!sample.refinementBox) return;
-  // Metadata records source-mesh coordinates; apply the same display frame as both meshes.
-  const points = sample.refinementBox.bounds.map(point => new THREE.Vector3(...point)
+  // Corners preserve oriented selections; older manifests provide axis-aligned bounds.
+  const box = sample.refinementBox;
+  const coordinates = box.corners || Array.from({length:8}, (_, i) =>
+    [box.bounds[(i >> 2) & 1][0], box.bounds[(i >> 1) & 1][1], box.bounds[i & 1][2]]);
+  const points = coordinates.map(point => new THREE.Vector3(...point)
     .sub(new THREE.Vector3(...sample.frame.center)).multiplyScalar(sample.frame.scale));
-  const box = new THREE.Box3(points[0], points[1]);
+  const edges = [];
+  for (let i = 0; i < 8; i++) for (const bit of [1,2,4]) if (!(i & bit)) edges.push(i, i | bit);
   regionHelpers = scenes.map(scene => {
-    const helper = new THREE.Box3Helper(box.clone(), 0xe88126);
+    const geometry = new THREE.BufferGeometry().setFromPoints(points);
+    geometry.setIndex(edges);
+    const helper = new THREE.LineSegments(geometry, new THREE.LineBasicMaterial({color:0xe88126}));
     helper.material.toneMapped = false;
     helper.material.depthTest = false; helper.material.depthWrite = false;
     helper.material.transparent = true; helper.material.opacity = .9;

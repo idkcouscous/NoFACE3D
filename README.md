@@ -81,3 +81,9 @@ The ablation viewer’s **Detail** button frames the recorded head-and-neck refi
 The Wings → head refinement and Engine bay → rockets examples each show three synchronized stages: the starting TRELLIS.2 mesh, edit 1, and edit 2 (final). A single camera controls all three views; rendering mode, orbit, pan, zoom, and auto-rotation are shared. One sequence loads at a time, with three columns on desktop and stacked views on mobile. The paper figures remain available below the viewer.
 
 `editing-manifest.json` records the supplied S3 sources, immutable URLs on the `editing-assets` branch, SHA-256 hashes, byte sizes, and triangle counts. The six GLBs are preserved without simplification. Each sequence uses one display transform derived from the union of all three mesh bounds, preserving their relative scale and alignment. The unused car variant `custom-cf1f543efaf6_439c-stock_mesh.glb` is excluded.
+
+## Comparison refinement regions
+
+All nine 3D comparison samples include the recorded refinement cuboid in both panes, with a **Refinement box** switch. BIGDETAIL uses the rotated `region.bbox_3d` annotations from each refinement run’s `bbox.json`; inverse box rotation preserves the eight corners in the original mesh scene. Character and TexVerse selections use `selection.source_cube_bounds` from `02_semantic_crop/selection.json` in the comparison frame. All regions use the existing shared display normalization, in both preview and full quality. Cuboids do not affect mesh framing or rendering modes.
+
+`comparison-regions.json` records the exact S3 metadata URIs, hashes, coordinate mapping, and corner coordinates. Alignment round-trip checks and agreement with all nine existing Detail camera centers validate the mappings.

@@ -1,0 +1,535 @@
+{
+  "115_correction_tape_dispenser": {
+    "field": "region.bbox_3d + region.rotation",
+    "mapping": "p_box = rotation @ p_original_glb_scene; inverse rotation maps all eight labeled corners into the comparison frame. Parent-frame scale is already removed by the recorded labeled-box convention.",
+    "sources": [
+      {
+        "uri": "s3://core-ai-ml-runtime-us-east-1/jingwen/agent_workspace/L40s-bot/benchmark/bigdetail_200b/refinement_runs/115_correction_tape_dispenser/9552a443f6154a4488c20c824d8deb9f/bbox.json",
+        "sha256": "02965275b947144f6156be3fdfd9cedcb9defa8da1ee242cb4ec775946f28bf4"
+      },
+      {
+        "uri": "s3://core-ai-ml-runtime-us-east-1/jingwen/agent_workspace/L40s-bot/benchmark/bigdetail_200b/refinement_runs/115_correction_tape_dispenser/9552a443f6154a4488c20c824d8deb9f/01_alignment/alignment.json",
+        "sha256": "51a0c90ebba834f9b985582dfc94be4e2fd2ce3383b55842424cdde99f0b539f"
+      },
+      {
+        "uri": "s3://core-ai-ml-runtime-us-east-1/jingwen/agent_workspace/L40s-bot/benchmark/bigdetail_200b/refinement_runs/115_correction_tape_dispenser/9552a443f6154a4488c20c824d8deb9f/00_inputs/parent_frame.json",
+        "sha256": "15cd85ad7cacf9e67cc5f5fb8f11434c82b88ae2d34024118ca0e3c9bf2a7a50"
+      }
+    ],
+    "corners": [
+      [
+        0.1807527105750273,
+        -0.2604988039032968,
+        -0.10836798243605132
+      ],
+      [
+        0.18117691677357775,
+        -0.25924052778965273,
+        0.1433697073596022
+      ],
+      [
+        0.2949849622496667,
+        0.06222073901626013,
+        -0.11017354568669338
+      ],
+      [
+        0.29540916844821713,
+        0.06347901512990418,
+        0.14156414410896012
+      ],
+      [
+        0.4547137078895431,
+        -0.35747198281006637,
+        -0.1083449303397786
+      ],
+      [
+        0.4551379140880935,
+        -0.35621370669642227,
+        0.1433927594558749
+      ],
+      [
+        0.5689459595641824,
+        -0.0347524398905094,
+        -0.11015049359042067
+      ],
+      [
+        0.5693701657627328,
+        -0.033494163776865336,
+        0.14158719620523283
+      ]
+    ],
+    "detailCenterCheck": 1.1123893155135927e-16
+  },
+  "114_tall_pedestal_sundial": {
+    "field": "region.bbox_3d + region.rotation",
+    "mapping": "p_box = rotation @ p_original_glb_scene; inverse rotation maps all eight labeled corners into the comparison frame. Parent-frame scale is already removed by the recorded labeled-box convention.",
+    "sources": [
+      {
+        "uri": "s3://core-ai-ml-runtime-us-east-1/jingwen/agent_workspace/L40s-bot/benchmark/bigdetail_200b/refinement_runs/114_tall_pedestal_sundial/fed771bd5dcf4e588963b9fffe8b5240/bbox.json",
+        "sha256": "5b9befb0c02418e9ebe08710727a055c6276f5ed5cf102ff3a3eda1185b6e939"
+      },
+      {
+        "uri": "s3://core-ai-ml-runtime-us-east-1/jingwen/agent_workspace/L40s-bot/benchmark/bigdetail_200b/refinement_runs/114_tall_pedestal_sundial/fed771bd5dcf4e588963b9fffe8b5240/01_alignment/alignment.json",
+        "sha256": "51370e208493c2ced0e39676a02054addb40e56b972975c1cd3d786e512c00f6"
+      },
+      {
+        "uri": "s3://core-ai-ml-runtime-us-east-1/jingwen/agent_workspace/L40s-bot/benchmark/bigdetail_200b/refinement_runs/114_tall_pedestal_sundial/fed771bd5dcf4e588963b9fffe8b5240/00_inputs/parent_frame.json",
+        "sha256": "995cefce95730e3c5578c85807ec66e57f884d0ddc0e51df53db87eef3dbb3ce"
+      }
+    ],
+    "corners": [
+      [
+        -0.14257543758572983,
+        0.2620545498031061,
+        -0.1611478249057086
+      ],
+      [
+        -0.17059524673505208,
+        0.261618166760859,
+        0.1521296526458737
+      ],
+      [
+        -0.14133890475061345,
+        0.4855175340557404,
+        -0.16072595330492342
+      ],
+      [
+        -0.1693587138999357,
+        0.48508115101349325,
+        0.15255152424665888
+      ],
+      [
+        0.20650714895491173,
+        0.2600639620000957,
+        -0.12992834858108565
+      ],
+      [
+        0.17848733980558948,
+        0.25962757895784855,
+        0.18334912897049663
+      ],
+      [
+        0.2077436817900281,
+        0.48352694625272996,
+        -0.1295064769803005
+      ],
+      [
+        0.17972387264070586,
+        0.4830905632104828,
+        0.18377100057128182
+      ]
+    ],
+    "detailCenterCheck": 1.1631705747361534e-16
+  },
+  "053_super_telephoto_lens": {
+    "field": "region.bbox_3d + region.rotation",
+    "mapping": "p_box = rotation @ p_original_glb_scene; inverse rotation maps all eight labeled corners into the comparison frame. Parent-frame scale is already removed by the recorded labeled-box convention.",
+    "sources": [
+      {
+        "uri": "s3://core-ai-ml-runtime-us-east-1/jingwen/agent_workspace/L40s-bot/benchmark/bigdetail_200b/refinement_runs/053_super_telephoto_lens/ea2a86b2c67e42a3b04ff09d54bb9809/bbox.json",
+        "sha256": "e8a5eeb734712f742b4c61bc2f5e8e4007ff715ad7d2e8b3dfa88e5bef99db0b"
+      },
+      {
+        "uri": "s3://core-ai-ml-runtime-us-east-1/jingwen/agent_workspace/L40s-bot/benchmark/bigdetail_200b/refinement_runs/053_super_telephoto_lens/ea2a86b2c67e42a3b04ff09d54bb9809/01_alignment/alignment.json",
+        "sha256": "50892aca273ea18118a674913270b4c3afe1331cb2198f63ad01291a2eacde88"
+      },
+      {
+        "uri": "s3://core-ai-ml-runtime-us-east-1/jingwen/agent_workspace/L40s-bot/benchmark/bigdetail_200b/refinement_runs/053_super_telephoto_lens/ea2a86b2c67e42a3b04ff09d54bb9809/00_inputs/parent_frame.json",
+        "sha256": "751d4aa859829aeb53a46852bb87a0cc377503d195692684b3b36e43bf28299f"
+      }
+    ],
+    "corners": [
+      [
+        -0.24784278358253917,
+        -0.15716465442415592,
+        -0.650620652295888
+      ],
+      [
+        -0.24697285254808005,
+        -0.15749257901389244,
+        -0.277147321306215
+      ],
+      [
+        -0.11550105599755298,
+        0.27132730986814646,
+        -0.6505526825815617
+      ],
+      [
+        -0.11463112496309383,
+        0.27099938527840994,
+        -0.2770793515918888
+      ],
+      [
+        0.14620105752683804,
+        -0.2788667570851587,
+        -0.6516453575335808
+      ],
+      [
+        0.14707098856129716,
+        -0.2791946816748952,
+        -0.2781720265439079
+      ],
+      [
+        0.27854278511182423,
+        0.14962520720714373,
+        -0.6515773878192546
+      ],
+      [
+        0.2794127161462834,
+        0.1492972826174072,
+        -0.2781040568295816
+      ]
+    ],
+    "detailCenterCheck": 2.2484586062492886e-16
+  },
+  "113_studio_softbox": {
+    "field": "region.bbox_3d + region.rotation",
+    "mapping": "p_box = rotation @ p_original_glb_scene; inverse rotation maps all eight labeled corners into the comparison frame. Parent-frame scale is already removed by the recorded labeled-box convention.",
+    "sources": [
+      {
+        "uri": "s3://core-ai-ml-runtime-us-east-1/jingwen/agent_workspace/L40s-bot/benchmark/bigdetail_200b/refinement_runs/113_studio_softbox/3e0c76bf9134437b8044477ba255de71/bbox.json",
+        "sha256": "ba4d8d814172b1caaa7aad6520317e6ea5937c10e963370938cf9e5f17ad415e"
+      },
+      {
+        "uri": "s3://core-ai-ml-runtime-us-east-1/jingwen/agent_workspace/L40s-bot/benchmark/bigdetail_200b/refinement_runs/113_studio_softbox/3e0c76bf9134437b8044477ba255de71/01_alignment/alignment.json",
+        "sha256": "0ce94d8ee153d19953f5a5219b0a46c30b9a415cc3c058935ceea7b577ed4f55"
+      },
+      {
+        "uri": "s3://core-ai-ml-runtime-us-east-1/jingwen/agent_workspace/L40s-bot/benchmark/bigdetail_200b/refinement_runs/113_studio_softbox/3e0c76bf9134437b8044477ba255de71/00_inputs/parent_frame.json",
+        "sha256": "ae1385aaa80ae33582cc2838af8717fead4e55a3026ab569de8c6de52a98e024"
+      }
+    ],
+    "corners": [
+      [
+        -0.21444085330028495,
+        -0.16795981034239227,
+        0.1512102315818487
+      ],
+      [
+        -0.2165320130084456,
+        -0.16705074734604067,
+        0.3299750489200842
+      ],
+      [
+        -0.20403182569081543,
+        0.2195558393806265,
+        0.14936138233145657
+      ],
+      [
+        -0.20612298539897608,
+        0.2204649023769781,
+        0.3281261996696921
+      ],
+      [
+        0.18946490563793822,
+        -0.17878628646526096,
+        0.15599010611495176
+      ],
+      [
+        0.18737374592977757,
+        -0.17787722346890936,
+        0.33475492345318725
+      ],
+      [
+        0.19987393324740774,
+        0.20872936325775782,
+        0.15414125686455962
+      ],
+      [
+        0.1977827735392471,
+        0.20963842625410942,
+        0.3329060742027951
+      ]
+    ],
+    "detailCenterCheck": 2.5257955065251657e-17
+  },
+  "401_cozy_thatch_roof_cottage": {
+    "field": "region.bbox_3d + region.rotation",
+    "mapping": "p_box = rotation @ p_original_glb_scene; inverse rotation maps all eight labeled corners into the comparison frame. Parent-frame scale is already removed by the recorded labeled-box convention.",
+    "sources": [
+      {
+        "uri": "s3://core-ai-ml-runtime-us-east-1/jingwen/agent_workspace/L40s-bot/benchmark/bigdetail_200b/refinement_runs/401_cozy_thatch_roof_cottage/cd5545b101c94b56859d692c32077e38/bbox.json",
+        "sha256": "378f82f8f06da71296c852a7db60aa6b2b5b0e3c9b0e4f31d48570a753d5ab67"
+      },
+      {
+        "uri": "s3://core-ai-ml-runtime-us-east-1/jingwen/agent_workspace/L40s-bot/benchmark/bigdetail_200b/refinement_runs/401_cozy_thatch_roof_cottage/cd5545b101c94b56859d692c32077e38/01_alignment/alignment.json",
+        "sha256": "7eeb83f05a8e8b80bddf736cf15f31485af2af05996bef116afda7612546ac42"
+      },
+      {
+        "uri": "s3://core-ai-ml-runtime-us-east-1/jingwen/agent_workspace/L40s-bot/benchmark/bigdetail_200b/refinement_runs/401_cozy_thatch_roof_cottage/cd5545b101c94b56859d692c32077e38/00_inputs/parent_frame.json",
+        "sha256": "500ebaa92e95fca071cfa7d6e762cf9fa445b930ffdad8c6c11412e751e62b51"
+      }
+    ],
+    "corners": [
+      [
+        -0.0651395439119478,
+        -0.5235148648648916,
+        0.10981385994069735
+      ],
+      [
+        -0.06017527100445943,
+        -0.5069650428053932,
+        0.3685849120664621
+      ],
+      [
+        -0.06948928180702744,
+        -0.19700424291889418,
+        0.08901516795586341
+      ],
+      [
+        -0.06452500889953908,
+        -0.18045442085939573,
+        0.3477862200816282
+      ],
+      [
+        0.20701537209914211,
+        -0.5202351878699635,
+        0.10438307726493912
+      ],
+      [
+        0.2119796450066305,
+        -0.5036853658104651,
+        0.36315412939070385
+      ],
+      [
+        0.20266563420406247,
+        -0.19372456592396597,
+        0.08358438528010516
+      ],
+      [
+        0.20762990711155085,
+        -0.17717474386446752,
+        0.34235543740586993
+      ]
+    ],
+    "detailCenterCheck": 2.7755575615628914e-17
+  },
+  "48ea7a97457fe100": {
+    "field": "selection.source_cube_bounds",
+    "mapping": "Recorded source selection in the native Y-up mesh frame; use the common display normalization.",
+    "sources": [
+      {
+        "uri": "s3://core-ai-ml-runtime-us-east-1/jamesrose/inference-results/ss-genshin-vroid-textured/genshin/48ea7a97457fe100/02_semantic_crop/selection.json",
+        "sha256": "726352282d80939e4d8616b002dc90b0a0f12992ce67055da6fac215c2b8cb21"
+      },
+      {
+        "uri": "s3://core-ai-ml-runtime-us-east-1/jamesrose/inference-results/ss-genshin-vroid-textured/genshin/48ea7a97457fe100/01_alignment/alignment.json",
+        "sha256": "5692ba8e7ae4bff75d68aa89a21403e01c0f087cd795ddc6053fd6198bfa4edf"
+      }
+    ],
+    "corners": [
+      [
+        -0.20667902884854447,
+        0.09877350104292221,
+        -0.2443549200970696
+      ],
+      [
+        -0.20667902884854447,
+        0.09877350104292221,
+        0.16910249854285986
+      ],
+      [
+        -0.20667902884854447,
+        0.5122309196828516,
+        -0.2443549200970696
+      ],
+      [
+        -0.20667902884854447,
+        0.5122309196828516,
+        0.16910249854285986
+      ],
+      [
+        0.206778389791385,
+        0.09877350104292221,
+        -0.2443549200970696
+      ],
+      [
+        0.206778389791385,
+        0.09877350104292221,
+        0.16910249854285986
+      ],
+      [
+        0.206778389791385,
+        0.5122309196828516,
+        -0.2443549200970696
+      ],
+      [
+        0.206778389791385,
+        0.5122309196828516,
+        0.16910249854285986
+      ]
+    ],
+    "detailCenterCheck": 1.1604152400837712e-16
+  },
+  "16cfe3a8cc58bb67": {
+    "field": "selection.source_cube_bounds",
+    "mapping": "Recorded source selection in the native Y-up mesh frame; use the common display normalization.",
+    "sources": [
+      {
+        "uri": "s3://core-ai-ml-runtime-us-east-1/jamesrose/inference-results/ss-genshin-vroid-textured/genshin/16cfe3a8cc58bb67/02_semantic_crop/selection.json",
+        "sha256": "d24c742b603292f62f6077983be41f4ad14d953e1184e1c5ea17e2f2c4ada92a"
+      },
+      {
+        "uri": "s3://core-ai-ml-runtime-us-east-1/jamesrose/inference-results/ss-genshin-vroid-textured/genshin/16cfe3a8cc58bb67/01_alignment/alignment.json",
+        "sha256": "75a96ac24a2e3a21c1953ad7a7c08f0078a4303a375988a5a4a2577da43c31e7"
+      }
+    ],
+    "corners": [
+      [
+        -0.37238207290450664,
+        -0.23743804187530138,
+        0.19441595635630027
+      ],
+      [
+        -0.37238207290450664,
+        -0.23743804187530138,
+        0.3448853236896606
+      ],
+      [
+        -0.37238207290450664,
+        -0.08696867454194107,
+        0.19441595635630027
+      ],
+      [
+        -0.37238207290450664,
+        -0.08696867454194107,
+        0.3448853236896606
+      ],
+      [
+        -0.22191270557114634,
+        -0.23743804187530138,
+        0.19441595635630027
+      ],
+      [
+        -0.22191270557114634,
+        -0.23743804187530138,
+        0.3448853236896606
+      ],
+      [
+        -0.22191270557114634,
+        -0.08696867454194107,
+        0.19441595635630027
+      ],
+      [
+        -0.22191270557114634,
+        -0.08696867454194107,
+        0.3448853236896606
+      ]
+    ],
+    "detailCenterCheck": 2.0550719709080064e-16
+  },
+  "1370432bd0904f3db226aab34c7bf478": {
+    "field": "selection.source_cube_bounds",
+    "mapping": "Recorded source selection in the front-facing comparison frame; use the common display normalization. The throne mesh display rotation is already represented in this selection frame.",
+    "sources": [
+      {
+        "uri": "s3://core-ai-ml-runtime-us-east-1/jamesrose/agent_workspace/b200-dev-box/datasets/texverse-accepted/1370432bd0904f3db226aab34c7bf478/ss_slat_campaign_labeled_sidefront_batch2_20260922/02_semantic_crop/selection.json",
+        "sha256": "6b8f2e8ce55618620dce785cddf27c135629e832899bbc8aaa01314909db79c1"
+      },
+      {
+        "uri": "s3://core-ai-ml-runtime-us-east-1/jamesrose/agent_workspace/b200-dev-box/datasets/texverse-accepted/1370432bd0904f3db226aab34c7bf478/ss_slat_campaign_labeled_sidefront_batch2_20260922/01_alignment/alignment.json",
+        "sha256": "f9787cb270545b6912cb16f574156463152c398f5d540c34d934b5d07175fe74"
+      }
+    ],
+    "corners": [
+      [
+        -0.1174671513730904,
+        -0.2796786327911594,
+        -0.013692774720017021
+      ],
+      [
+        -0.1174671513730904,
+        -0.2796786327911594,
+        0.2529589977162758
+      ],
+      [
+        -0.1174671513730904,
+        -0.013026860354866613,
+        -0.013692774720017021
+      ],
+      [
+        -0.1174671513730904,
+        -0.013026860354866613,
+        0.2529589977162758
+      ],
+      [
+        0.1491846210632024,
+        -0.2796786327911594,
+        -0.013692774720017021
+      ],
+      [
+        0.1491846210632024,
+        -0.2796786327911594,
+        0.2529589977162758
+      ],
+      [
+        0.1491846210632024,
+        -0.013026860354866613,
+        -0.013692774720017021
+      ],
+      [
+        0.1491846210632024,
+        -0.013026860354866613,
+        0.2529589977162758
+      ]
+    ],
+    "detailCenterCheck": 6.245004513516506e-17
+  },
+  "72e761d7958640e49ef89100b70521b1": {
+    "field": "selection.source_cube_bounds",
+    "mapping": "Recorded source selection in the front-facing comparison frame; use the common display normalization. The throne mesh display rotation is already represented in this selection frame.",
+    "sources": [
+      {
+        "uri": "s3://core-ai-ml-runtime-us-east-1/jamesrose/agent_workspace/b200-dev-box/datasets/texverse-accepted/72e761d7958640e49ef89100b70521b1/ss_slat_campaign_labeled_sidefront_batch2_20260922/02_semantic_crop/selection.json",
+        "sha256": "f3b458dc7b029c370d3bbf2ef267089efeda0ecd82ed6fcc7eba5e5b861149aa"
+      },
+      {
+        "uri": "s3://core-ai-ml-runtime-us-east-1/jamesrose/agent_workspace/b200-dev-box/datasets/texverse-accepted/72e761d7958640e49ef89100b70521b1/ss_slat_campaign_labeled_sidefront_batch2_20260922/01_alignment/alignment.json",
+        "sha256": "a9d0dadc19a48fae9a78649e241e52e0a1c8fe64fb77b2ace2561dacfc33b5e1"
+      }
+    ],
+    "corners": [
+      [
+        -0.14182969063009881,
+        -0.5534732626515393,
+        -0.16114010492724135
+      ],
+      [
+        -0.14182969063009881,
+        -0.5534732626515393,
+        0.32589822847832745
+      ],
+      [
+        -0.14182969063009881,
+        -0.06643492924597039,
+        -0.16114010492724135
+      ],
+      [
+        -0.14182969063009881,
+        -0.06643492924597039,
+        0.32589822847832745
+      ],
+      [
+        0.34520864277547,
+        -0.5534732626515393,
+        -0.16114010492724135
+      ],
+      [
+        0.34520864277547,
+        -0.5534732626515393,
+        0.32589822847832745
+      ],
+      [
+        0.34520864277547,
+        -0.06643492924597039,
+        -0.16114010492724135
+      ],
+      [
+        0.34520864277547,
+        -0.06643492924597039,
+        0.32589822847832745
+      ]
+    ],
+    "detailCenterCheck": 1.1443916996305594e-16
+  }
+}
