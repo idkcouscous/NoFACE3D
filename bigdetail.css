@@ -53,5 +53,5 @@
 .bd .bd-box-toggle input{width:18px;height:18px;accent-color:var(--green);cursor:pointer}
 @media print{.bd .bd-box-toggle{display:none}}
 
-.bd-picker[data-size="8"]{grid-template-columns:repeat(4,minmax(0,1fr))}
-@media(max-width:620px){.bd-picker[data-size="8"]{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.bd-picker:is([data-size="7"],[data-size="8"]){grid-template-columns:repeat(4,minmax(0,1fr))}
+@media(max-width:620px){.bd-picker:is([data-size="7"],[data-size="8"]){grid-template-columns:repeat(2,minmax(0,1fr))}}
