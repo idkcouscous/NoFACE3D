@@ -78,7 +78,7 @@ The ablation viewer’s **Detail** button frames the recorded head-and-neck refi
 
 ## Sequential editing viewer
 
-The Wings → head refinement and Engine bay → rockets examples each show three synchronized stages: the starting TRELLIS.2 mesh, edit 1, and edit 2 (final). A single camera controls all three views; rendering mode, orbit, pan, zoom, and auto-rotation are shared. One sequence loads at a time, with three columns on desktop and stacked views on mobile. The paper figures remain available below the viewer.
+The Wings → head refinement and Engine bay → rockets examples each show three synchronized stages: the starting TRELLIS.2 mesh, edit 1, and edit 2 (final). A single camera controls all three views; rendering mode, orbit, pan, zoom, and auto-rotation are shared. One sequence loads at a time, with three columns on desktop and stacked views on mobile.
 
 `editing-manifest.json` records the supplied S3 sources, immutable URLs on the `editing-assets` branch, SHA-256 hashes, byte sizes, and triangle counts. The six GLBs are preserved without simplification. Each sequence uses one display transform derived from the union of all three mesh bounds, preserving their relative scale and alignment. The unused car variant `custom-cf1f543efaf6_439c-stock_mesh.glb` is excluded.
 

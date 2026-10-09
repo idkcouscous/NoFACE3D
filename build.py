@@ -4,7 +4,7 @@ from compress_previews import compress_previews
 root=Path(__file__).resolve().parent
 compress_previews(root)
 p=fitz.open(root/"paper.pdf")
-selections={"hero":(0,0),"method":(3,0),"comparisons":(6,0),"objects":(7,0),"ablation":(8,0),"hat":(8,1),"wings":(18,0),"car":(18,1)}
+selections={"hero":(0,0),"method":(3,0),"comparisons":(6,0),"objects":(7,0)}
 t=(root/"template.html").read_text()
 for name,(page,n) in selections.items():
  b=[b for b in p[page].get_text("dict")["blocks"] if b["type"]==1][n]

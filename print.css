@@ -45,7 +45,6 @@ section.block { break-before:page; break-inside:avoid; padding:10px 0 0; border-
 .steps { gap:16px; }.step h3 { font-size:14px; }.step p { font-size:11px; }
 #anchoring img { max-height:440px; }
 #editing .image-frame { margin-top:18px; }
-.edit-frame { min-height:270px; }
 .stats { gap:25px; }.stat strong { font-size:35px; }
 .benchmark { padding:22px; }.benchmark h3 { font-size:26px; }
 #benchmark .limitations { margin-top:25px; font-size:12px; }
