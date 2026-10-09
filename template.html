@@ -30,14 +30,14 @@ details{border-top:1px solid var(--line);margin-top:24px;padding-top:14px;font-s
 </head>
 <body>
 <div class="wrap">
-<header><a class="brand" href="#top">NOFACE<span>3D</span></a><nav aria-label="Main navigation"><a href="#abstract">Abstract</a><a href="#results">Results</a><a href="#method">Method</a><a href="#editing">Editing</a><a href="#benchmark">BIGDETAIL</a><a href="#resources">Resources</a></nav></header>
+<header><a class="brand" href="#top">NOFACE<span>3D</span></a><nav aria-label="Main navigation"><a href="#abstract">Abstract</a><a href="#method">Method</a><a href="#results">Results</a><a href="#editing">Editing</a><a href="#benchmark">BIGDETAIL</a><a href="#resources">Resources</a></nav></header>
 <main id="top">
 <div class="hero">
 <div class="eyebrow">Training-free local 3D refinement</div>
 <h1>NOFACE3D:<br><em>Noise-Scheduled Focused Anchoring for Controlled Enhancement for 3D Generation</em></h1>
 <p class="subtitle">Local geometry and texture refinement with a frozen 3D generator.</p>
 <p class="authors">James Rose<sup>1*</sup>, Jingwen Liang<sup>1*</sup>, Wenchao Ma<sup>1,2</sup>, Oren Jacob<sup>1</sup>, Haomiao Jiang<sup>1</sup><br><sup>1</sup>Roblox&emsp;<sup>2</sup>The Pennsylvania State University</p>
-<p class="tldr"><b>TL;DR</b> NOFACE3D sharpens a chosen region of an image-to-3D asset without any training: it scales the region up to fill a frozen generator’s full-resolution grid, regenerates it with a noise schedule that keeps the boundary anchored, and puts it back without changing the rest of the asset.</p>
+<p class="tldr"><b>TL;DR</b> A training-free method that sharpens the geometry and texture of a selected region of an image-to-3D asset while preserving the rest, and also enables localized 3D editing.</p>
 <div class="actions"><a class="action primary" href="paper.pdf" target="_blank" rel="noopener">Paper ↗</a><a class="action" href="#results">Results ↓</a><a class="action" href="#benchmark">BIGDETAIL</a></div>
 <div class="hero-media"><div class="media-top"><span>TRELLIS.2 and NOFACE3D</span><span>Figure 1</span></div><img src="{{hero}}" alt="Figure 1 from the paper: original and refined scenes, with detail comparisons." width="1400" height="570"></div>
 <p class="caption">NOFACE3D enlarges and refines a selected region of an existing mesh, conditioned on the corresponding image crop.</p>
@@ -46,13 +46,17 @@ details{border-top:1px solid var(--line);margin-top:24px;padding-top:14px;font-s
 <section class="block" id="abstract">
 <div class="section-head"><span class="index">01</span><h2>Abstract</h2></div>
 <div class="abstract">
-<p>Recent image-to-3D models generate complete, high-quality assets from a single image, with global shape and appearance that are already convincing; what remains is the fine scale, where small, thin, elongated, or detail-rich regions are reconstructed softly and under-resolved. This gap can arise in generators with fixed-resolution spatial grids: the same spatial sampling density is used for a large, smooth, low-curvature surface and for a thin, high-curvature structure that carries most of the perceived detail.</p>
-<p>To this end, we introduce NOFACE3D, a training-free framework that refines these detail-critical regions while preserving the rest of the asset. Given a generated mesh, its input image, and a refinement box, NOFACE3D extracts the selected submesh, scales it up to fill the generator’s input volume, and re-encodes it into the full-resolution latent grid. Conditioned on the image crop, it refines the region through flow-based sampling with a spatially varying noise schedule that anchors boundary latents. The refined region is then integrated back into the original asset, preserving the surrounding geometry and appearance. We implement NOFACE3D on TRELLIS.2 and its sparse voxel representation; all of it operates purely at inference time on the frozen pretrained generator.</p>
-<p>We evaluate NOFACE3D on PAniC-3D, TexVerse and BIGDETAIL, a new benchmark of 339 assets with annotated detail-critical regions. On all three, it generates sharper geometry and finer texture detail than the baselines.</p>
+<p>Recent image-to-3D models generate complete, high-quality assets from a single image, with global shape and appearance that are already convincing; what remains is the fine scale, where small, thin, elongated, or detail-rich regions are reconstructed softly and under-resolved. This gap can arise in generators with fixed-resolution spatial grids: the same spatial sampling density is used for a large, smooth, low-curvature surface and for a thin, high-curvature structure that carries most of the perceived detail. To this end, we introduce NOFACE3D, a training-free framework that refines these detail-critical regions while preserving the rest of the asset. Given a generated mesh, its input image, and a refinement box, NOFACE3D extracts the selected submesh, scales it up to fill the generator’s input volume, and re-encodes it into the full-resolution latent grid. Conditioned on the image crop, it refines the region through flow-based sampling with a spatially varying noise schedule that anchors boundary latents. The refined region is then integrated back into the original asset, preserving the surrounding geometry and appearance. We implement NOFACE3D on TRELLIS.2 and its sparse voxel representation; all of it operates purely at inference time on the frozen pretrained generator. We evaluate NOFACE3D on PAniC-3D, TexVerse and BIGDETAIL, a new benchmark of 339 assets with annotated detail-critical regions. On all three, it generates sharper geometry and finer texture detail than the baselines.</p>
+</div>
+</section>
+<section class="block" id="method">
+<div class="section-head"><span class="index">02</span><h2>Method</h2></div>
+<p class="section-lead">The selected region fills the generator’s spatial grid. A spatial noise schedule anchors the boundary during refinement.</p>
+<div class="layout"><div><div class="steps"><div class="step"><small>01</small><h3>Select a region</h3><p>Select a region in the mesh and conditioning image.</p></div><div class="step"><small>02</small><h3>Enlarge &amp; re-encode</h3><p>Scale the submesh to fill the generator’s spatial grid and re-encode it.</p></div><div class="step"><small>03</small><h3>Refine with anchoring</h3><p>Anchor boundary latents and allow stronger changes toward the interior.</p></div><div class="step"><small>04</small><h3>Reintegrate</h3><p>Transform the refined region back and combine it with the original asset.</p></div></div><div class="image-frame"><img src="{{method}}" alt="Figure 2: region selection, re-encoding, spatial noise scheduling, and mesh reintegration." loading="lazy"><p class="caption">Figure 2 · Overview of NOFACE3D. Given an asset generated by an off-the-shelf image-to-3D model and a user-marked region, NOFACE3D scales the region up to fill the generator’s input volume and re-encodes it into the full-resolution latent grid. A boundary-distance field assigns each token a release level τ: tokens near attachment boundaries stay anchored, and tokens farther away are regenerated more strongly. Geometry and texture are then resampled with spatially varying SDEdit, and unreleased tokens are re-anchored to the base asset at every step. Finally, the refined mesh replaces the base faces inside the crop box.</p></div></div>
 </div>
 </section>
 <section class="block" id="results" data-collection="objects">
-<div class="section-head"><span class="index">02</span><h2>3D comparisons</h2></div>
+<div class="section-head"><span class="index">03</span><h2>3D comparisons</h2></div>
 <p class="section-lead">Compare TRELLIS.2 and NOFACE3D on seventeen examples: BIGDETAIL objects, characters, and TexVerse objects.</p>
 <div class="layout"><div>
 <div class="tabs" role="group" aria-label="Result collection"><button type="button" data-gallery="objects" aria-pressed="true">Objects · BIGDETAIL</button><button type="button" data-gallery="characters" aria-pressed="false">Characters</button><button type="button" data-gallery="texverse" aria-pressed="false">Objects · TexVerse</button></div>
@@ -77,12 +81,6 @@ details{border-top:1px solid var(--line);margin-top:24px;padding-top:14px;font-s
 <script id="bigdetail-data" type="application/json">{{bigdetail_manifest}}</script>
 
 </div></div>
-</section>
-<section class="block" id="method">
-<div class="section-head"><span class="index">03</span><h2>Method</h2></div>
-<p class="section-lead">The selected region fills the generator’s spatial grid. A spatial noise schedule anchors the boundary during refinement.</p>
-<div class="layout"><div><div class="steps"><div class="step"><small>01</small><h3>Select a region</h3><p>Select a region in the mesh and conditioning image.</p></div><div class="step"><small>02</small><h3>Enlarge &amp; re-encode</h3><p>Scale the submesh to fill the generator’s spatial grid and re-encode it.</p></div><div class="step"><small>03</small><h3>Refine with anchoring</h3><p>Anchor boundary latents and allow stronger changes toward the interior.</p></div><div class="step"><small>04</small><h3>Reintegrate</h3><p>Transform the refined region back and combine it with the original asset.</p></div></div><div class="image-frame"><img src="{{method}}" alt="Figure 2: region selection, re-encoding, spatial noise scheduling, and mesh reintegration." loading="lazy"><p class="caption">Figure 2 · Overview of NOFACE3D. Given an asset generated by an off-the-shelf image-to-3D model and a user-marked region, NOFACE3D scales the region up to fill the generator’s input volume and re-encodes it into the full-resolution latent grid. A boundary-distance field assigns each token a release level τ: tokens near attachment boundaries stay anchored, and tokens farther away are regenerated more strongly. Geometry and texture are then resampled with spatially varying SDEdit, and unreleased tokens are re-anchored to the base asset at every step. Finally, the refined mesh replaces the base faces inside the crop box.</p></div></div>
-</div>
 </section>
 <section class="block" id="anchoring">
 <div class="section-head"><span class="index">04</span><h2>Boundary anchoring ablation</h2></div>
