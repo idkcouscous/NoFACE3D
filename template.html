@@ -9,7 +9,7 @@
 *{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:25px}body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.6 Arial,Helvetica,sans-serif}a{color:inherit;text-decoration:none}a:hover{text-decoration:underline}button,input{font:inherit}button,a.action{min-height:42px}button{cursor:pointer}button:disabled{cursor:default;color:#788071}button:focus-visible,a:focus-visible,input:focus-visible{outline:3px solid #798e56;outline-offset:4px}[hidden]{display:none!important}
 .wrap{max-width:1200px;margin:auto;padding:0 48px}
 header{display:flex;justify-content:space-between;align-items:center;padding:25px 0;border-bottom:1px solid var(--line);gap:25px}.brand{font-weight:700;letter-spacing:-.7px;font-size:22px}.brand span{color:var(--green)}nav{display:flex;gap:24px;flex-wrap:wrap;font-size:13px}
-.hero{padding:66px 0 36px;text-align:center}.eyebrow,.index{font-size:11px;letter-spacing:2px;text-transform:uppercase;font-weight:700;color:var(--green)}h1{font-size:clamp(30px,4vw,48px);line-height:1.15;letter-spacing:-1px;max-width:1000px;margin:21px auto}h1 em{font-style:normal;color:var(--green)}.subtitle{font-size:21px;max-width:700px;margin:0 auto 17px;color:#424d42;line-height:1.5}.formal{font-size:12px;max-width:640px;margin:0 auto 20px;color:var(--sub)}.authors{font-size:13px;color:var(--sub);margin-bottom:22px}
+.hero{padding:66px 0 36px;text-align:center}.eyebrow,.index{font-size:11px;letter-spacing:2px;text-transform:uppercase;font-weight:700;color:var(--green)}h1{font-size:clamp(30px,4vw,48px);line-height:1.15;letter-spacing:-1px;max-width:1000px;margin:21px auto}h1 em{font-style:normal;color:var(--green)}.subtitle{font-size:21px;max-width:700px;margin:0 auto 17px;color:#424d42;line-height:1.5}.formal{font-size:12px;max-width:640px;margin:0 auto 20px;color:var(--sub)}.authors{font-size:13px;color:var(--sub);margin-bottom:22px}.tldr{max-width:760px;margin:0 auto 24px;padding:14px 20px;background:var(--pale);border-radius:8px;font-size:15px;line-height:1.6;color:#33402f;text-align:left}.tldr b{color:var(--green);letter-spacing:.5px;margin-right:6px}.abstract{max-width:860px}.abstract p{font-size:15px;line-height:1.75;color:#33402f;margin:0 0 14px;text-align:justify}
 .actions{display:flex;justify-content:center;gap:10px;flex-wrap:wrap}.action{border:1px solid var(--line);border-radius:6px;padding:9px 18px;background:transparent;font-size:13px;display:inline-flex;align-items:center;gap:8px}.primary{background:var(--green);border-color:var(--green);color:white}.action:disabled{background:#f1f1eb}
 .hero-media{background:white;border:1px solid var(--line);border-radius:12px;overflow:hidden;margin-top:36px}.media-top{display:flex;justify-content:space-between;gap:12px;padding:12px 20px;font-size:11px;text-transform:uppercase;letter-spacing:1.3px;border-bottom:1px solid var(--line);text-align:left}.media-top span:last-child{color:var(--sub)}img{display:block;max-width:100%;height:auto}.hero-media img{width:100%;padding:20px 22px 12px}.caption{font-size:12px;color:var(--sub);margin:10px 0 0}.hero .caption{max-width:820px;margin:12px auto 0}.tag{font-size:10px;letter-spacing:.7px;text-transform:uppercase;background:var(--pale);color:var(--green);padding:5px 8px;border-radius:4px;display:inline-block}
 section.block{padding:52px 0;border-top:1px solid var(--line)}.section-head{display:flex;align-items:baseline;gap:17px;margin-bottom:22px}.section-head h2{font-size:30px;line-height:1.2;letter-spacing:-1px;margin:0}.section-head .index{white-space:nowrap}.section-lead{color:var(--sub);font-size:15px;max-width:720px;margin:-6px 0 25px}.layout{display:grid;grid-template-columns:minmax(0,1fr);gap:30px;align-items:start}.tabs{display:flex;flex-wrap:wrap;gap:7px;margin-bottom:18px}.tabs button{border:1px solid var(--line);background:transparent;border-radius:6px;padding:8px 13px;font-size:12px}.tabs button[aria-pressed=true]{background:var(--green);border-color:var(--green);color:#fff}.image-frame{background:white;border:1px solid var(--line);border-radius:8px;padding:19px}.image-frame img{width:100%}.fig-title{display:flex;justify-content:space-between;gap:10px;align-items:center;margin:0 0 14px;font-size:13px}
@@ -30,20 +30,29 @@ details{border-top:1px solid var(--line);margin-top:24px;padding-top:14px;font-s
 </head>
 <body>
 <div class="wrap">
-<header><a class="brand" href="#top">NOFACE<span>3D</span></a><nav aria-label="Main navigation"><a href="#results">Results</a><a href="#method">Method</a><a href="#editing">Editing</a><a href="#benchmark">BIGDETAIL</a><a href="#resources">Resources</a></nav></header>
+<header><a class="brand" href="#top">NOFACE<span>3D</span></a><nav aria-label="Main navigation"><a href="#abstract">Abstract</a><a href="#results">Results</a><a href="#method">Method</a><a href="#editing">Editing</a><a href="#benchmark">BIGDETAIL</a><a href="#resources">Resources</a></nav></header>
 <main id="top">
 <div class="hero">
 <div class="eyebrow">Training-free local 3D refinement</div>
 <h1>NOFACE3D:<br><em>Noise-Scheduled Focused Anchoring for Controlled Enhancement for 3D Generation</em></h1>
 <p class="subtitle">Local geometry and texture refinement with a frozen 3D generator.</p>
-<p class="authors">James Rose<sup>1*</sup>, Jingwen Liang<sup>1*</sup>, Wenchao Ma<sup>1,2</sup>, Oren Jacob<sup>1</sup>, Haomiao Jiang<sup>1</sup><br><sup>1</sup>Roblox&emsp;<sup>2</sup>Penn State<br>Under review at ICLR 2027</p>
+<p class="authors">James Rose<sup>1*</sup>, Jingwen Liang<sup>1*</sup>, Wenchao Ma<sup>1,2</sup>, Oren Jacob<sup>1</sup>, Haomiao Jiang<sup>1</sup><br><sup>1</sup>Roblox&emsp;<sup>2</sup>The Pennsylvania State University</p>
+<p class="tldr"><b>TL;DR</b> NOFACE3D sharpens a chosen region of an image-to-3D asset without any training: it scales the region up to fill a frozen generator’s full-resolution grid, regenerates it with a noise schedule that keeps the boundary anchored, and puts it back without changing the rest of the asset.</p>
 <div class="actions"><a class="action primary" href="paper.pdf" target="_blank" rel="noopener">Paper ↗</a><a class="action" href="#results">Results ↓</a><a class="action" href="#benchmark">BIGDETAIL</a></div>
 <div class="hero-media"><div class="media-top"><span>TRELLIS.2 and NOFACE3D</span><span>Figure 1</span></div><img src="{{hero}}" alt="Figure 1 from the paper: original and refined scenes, with detail comparisons." width="1400" height="570"></div>
 <p class="caption">NOFACE3D enlarges and refines a selected region of an existing mesh, conditioned on the corresponding image crop.</p>
 
 </div>
+<section class="block" id="abstract">
+<div class="section-head"><span class="index">01</span><h2>Abstract</h2></div>
+<div class="abstract">
+<p>Recent image-to-3D models generate complete, high-quality assets from a single image, with global shape and appearance that are already convincing; what remains is the fine scale, where small, thin, elongated, or detail-rich regions are reconstructed softly and under-resolved. This gap can arise in generators with fixed-resolution spatial grids: the same spatial sampling density is used for a large, smooth, low-curvature surface and for a thin, high-curvature structure that carries most of the perceived detail.</p>
+<p>To this end, we introduce NOFACE3D, a training-free framework that refines these detail-critical regions while preserving the rest of the asset. Given a generated mesh, its input image, and a refinement box, NOFACE3D extracts the selected submesh, scales it up to fill the generator’s input volume, and re-encodes it into the full-resolution latent grid. Conditioned on the image crop, it refines the region through flow-based sampling with a spatially varying noise schedule that anchors boundary latents. The refined region is then integrated back into the original asset, preserving the surrounding geometry and appearance. We implement NOFACE3D on TRELLIS.2 and its sparse voxel representation; all of it operates purely at inference time on the frozen pretrained generator.</p>
+<p>We evaluate NOFACE3D on PAniC-3D, TexVerse and BIGDETAIL, a new benchmark of 339 assets with annotated detail-critical regions. On all three, it generates sharper geometry and finer texture detail than the baselines.</p>
+</div>
+</section>
 <section class="block" id="results" data-collection="objects">
-<div class="section-head"><span class="index">01</span><h2>3D comparisons</h2></div>
+<div class="section-head"><span class="index">02</span><h2>3D comparisons</h2></div>
 <p class="section-lead">Compare TRELLIS.2 and NOFACE3D on seventeen examples: BIGDETAIL objects, characters, and TexVerse objects.</p>
 <div class="layout"><div>
 <div class="tabs" role="group" aria-label="Result collection"><button type="button" data-gallery="objects" aria-pressed="true">Objects · BIGDETAIL</button><button type="button" data-gallery="characters" aria-pressed="false">Characters</button><button type="button" data-gallery="texverse" aria-pressed="false">Objects · TexVerse</button></div>
@@ -70,13 +79,13 @@ details{border-top:1px solid var(--line);margin-top:24px;padding-top:14px;font-s
 </div></div>
 </section>
 <section class="block" id="method">
-<div class="section-head"><span class="index">02</span><h2>Method</h2></div>
+<div class="section-head"><span class="index">03</span><h2>Method</h2></div>
 <p class="section-lead">The selected region fills the generator’s spatial grid. A spatial noise schedule anchors the boundary during refinement.</p>
 <div class="layout"><div><div class="steps"><div class="step"><small>01</small><h3>Select a region</h3><p>Select a region in the mesh and conditioning image.</p></div><div class="step"><small>02</small><h3>Enlarge &amp; re-encode</h3><p>Scale the submesh to fill the generator’s spatial grid and re-encode it.</p></div><div class="step"><small>03</small><h3>Refine with anchoring</h3><p>Anchor boundary latents and allow stronger changes toward the interior.</p></div><div class="step"><small>04</small><h3>Reintegrate</h3><p>Transform the refined region back and combine it with the original asset.</p></div></div><div class="image-frame"><img src="{{method}}" alt="Figure 2: region selection, re-encoding, spatial noise scheduling, and mesh reintegration." loading="lazy"><p class="caption">Figure 2 · Overview of NOFACE3D. Given an asset generated by an off-the-shelf image-to-3D model and a user-marked region, NOFACE3D scales the region up to fill the generator’s input volume and re-encodes it into the full-resolution latent grid. A boundary-distance field assigns each token a release level τ: tokens near attachment boundaries stay anchored, and tokens farther away are regenerated more strongly. Geometry and texture are then resampled with spatially varying SDEdit, and unreleased tokens are re-anchored to the base asset at every step. Finally, the refined mesh replaces the base faces inside the crop box.</p></div></div>
 </div>
 </section>
 <section class="block" id="anchoring">
-<div class="section-head"><span class="index">03</span><h2>Boundary anchoring ablation</h2></div>
+<div class="section-head"><span class="index">04</span><h2>Boundary anchoring ablation</h2></div>
 <p class="section-lead">Compare refinement with and without noise scheduling using linked cameras.</p>
 <div id="ablation-viewer" class="bd" aria-label="Boundary anchoring synchronized 3D comparisons">
   <div class="bd-picker" role="group" aria-label="Choose an ablation sample"></div>
@@ -112,7 +121,7 @@ details{border-top:1px solid var(--line);margin-top:24px;padding-top:14px;font-s
 <script id="ablation-data" type="application/json">{{ablation_manifest}}</script>
 </section>
 <section class="block" id="editing">
-<div class="section-head"><span class="index">04</span><h2>Sequential editing</h2></div>
+<div class="section-head"><span class="index">05</span><h2>Sequential editing</h2></div>
 <p class="section-lead">Edited conditioning crops guide local changes to the mesh. These examples apply two edits in sequence.</p>
 <div id="editing-viewer" class="bd" aria-label="Sequential editing synchronized 3D comparisons">
   <div class="bd-picker" role="group" aria-label="Choose an editing sequence"></div>
@@ -143,13 +152,13 @@ details{border-top:1px solid var(--line);margin-top:24px;padding-top:14px;font-s
 <script id="editing-data" type="application/json">{{editing_manifest}}</script>
 </section>
 <section class="block" id="evaluation">
-<div class="section-head"><span class="index">05</span><h2>Evaluation</h2></div>
+<div class="section-head"><span class="index">06</span><h2>Evaluation</h2></div>
 <div class="layout"><div><div class="stats"><div class="stat"><strong>83.3%</strong><h3>Human preference</h3><p>Preference among ratings excluding “neither”; 73.3% across all responses.</p></div><div class="stat"><strong>4,892</strong><h3>PAniC-3D assets</h3><p>Assets evaluated against their TRELLIS.2 baselines.</p></div><div class="stat"><strong>339</strong><h3>BIGDETAIL assets</h3><p>Refined assets with annotated detail-critical regions in images and meshes.</p></div></div>
 <details><summary>Study details and metrics</summary><p>Human study: 16 reviewers, 200 PAniC-3D assets, 1,188 responses. 12.0% of responses were “neither.” Of judged ratings, 12.2% preferred TRELLIS.2 and 4.5% were ties.</p><div class="tablewrap"><table><caption>PAniC-3D large-scale evaluation, N = 4,892 · Paper Table 4</caption><thead><tr><th>Metric</th><th>TRELLIS.2</th><th>NOFACE3D</th></tr></thead><tbody><tr><td>FID ↓</td><td>13.97</td><td>7.43</td></tr><tr><td>DINO similarity ↑</td><td>0.812</td><td>0.830</td></tr><tr><td>Chamfer × 100 ↓</td><td>3.359</td><td>3.370</td></tr></tbody></table></div><p>See the paper for evaluation protocols, additional baselines, and uncertainty estimates.</p><a href="paper.pdf" target="_blank" rel="noopener">Read the full evaluation ↗</a></details>
 </div></div>
 </section>
 <section class="block" id="benchmark" aria-labelledby="benchmark-heading">
-<div class="section-head"><span class="index">06</span><h2 id="benchmark-heading">BIGDETAIL benchmark</h2></div>
+<div class="section-head"><span class="index">07</span><h2 id="benchmark-heading">BIGDETAIL benchmark</h2></div>
 <div class="benchmark">
 <p class="benchmark-intro">339 refined assets with image crops and 3D region annotations for small structures such as mechanisms, fittings, and connectors.</p>
 <div class="resource-grid"><div class="resource"><b>Conditioning images</b><span>Generated object images and corresponding detail crops.</span></div><div class="resource"><b>Region annotations</b><span>Image rectangles and oriented 3D selection boxes.</span></div><div class="resource"><b>Evaluation protocol</b><span>Paired comparisons of original and refined assets; no artist ground-truth meshes.</span></div></div>
@@ -166,7 +175,7 @@ details{border-top:1px solid var(--line);margin-top:24px;padding-top:14px;font-s
 <div class="limitations"><b>Limitations</b><p>Printed labels and lettering may remain distorted after refinement.</p></div>
 </section>
 <section class="block" id="resources">
-<div class="section-head"><span class="index">07</span><h2>Paper and resources</h2></div>
+<div class="section-head"><span class="index">08</span><h2>Paper and resources</h2></div>
 <div class="actions" style="justify-content:flex-start"><a class="action primary" href="paper.pdf" target="_blank" rel="noopener">Paper ↗</a><a class="action" href="https://github.com/idkcouscous/NoFACE3D">Website source</a></div><p class="section-lead" style="margin:18px 0 0">Method code and the full BIGDETAIL dataset are planned for release.</p>
 </section>
 </main><footer><span>NOFACE3D · Research project page</span><a href="https://github.com/idkcouscous/NoFACE3D">Website source</a></footer>
