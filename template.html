@@ -38,7 +38,7 @@ details{border-top:1px solid var(--line);margin-top:24px;padding-top:14px;font-s
 <p class="subtitle">Local geometry and texture refinement with a frozen 3D generator.</p>
 <p class="authors">James Rose<sup>1*</sup>, Jingwen Liang<sup>1*</sup>, Wenchao Ma<sup>1,2</sup>, Oren Jacob<sup>1</sup>, Haomiao Jiang<sup>1</sup><br><sup>1</sup>Roblox&emsp;<sup>2</sup>The Pennsylvania State University</p>
 <p class="tldr"><b>TL;DR</b> A training-free method that sharpens the geometry and texture of a selected region of an image-to-3D asset while preserving the rest, and also enables localized 3D editing.</p>
-<div class="actions"><a class="action primary" href="paper.pdf" target="_blank" rel="noopener">Paper ↗</a><a class="action" href="#results">Results ↓</a><a class="action" href="#benchmark">BIGDETAIL</a></div>
+<div class="actions"><a class="action primary" href="https://arxiv.org/abs/2610.13050" target="_blank" rel="noopener">Paper ↗</a><a class="action" href="#results">Results ↓</a><a class="action" href="#benchmark">BIGDETAIL</a></div>
 <div class="hero-media"><div class="media-top"><span>TRELLIS.2 and NOFACE3D</span><span>Figure 1</span></div><img src="{{hero}}" alt="Figure 1 from the paper: original and refined scenes, with detail comparisons." width="1400" height="570"></div>
 <p class="caption">NOFACE3D enlarges and refines a selected region of an existing mesh, conditioned on the corresponding image crop.</p>
 
@@ -152,7 +152,7 @@ details{border-top:1px solid var(--line);margin-top:24px;padding-top:14px;font-s
 <section class="block" id="evaluation">
 <div class="section-head"><span class="index">06</span><h2>Evaluation</h2></div>
 <div class="layout"><div><div class="stats"><div class="stat"><strong>83.3%</strong><h3>Human preference</h3><p>Preference among ratings excluding “neither”; 73.3% across all responses.</p></div><div class="stat"><strong>4,892</strong><h3>PAniC-3D assets</h3><p>Assets evaluated against their TRELLIS.2 baselines.</p></div><div class="stat"><strong>339</strong><h3>BIGDETAIL assets</h3><p>Refined assets with annotated detail-critical regions in images and meshes.</p></div></div>
-<details><summary>Study details and metrics</summary><p>Human study: 16 reviewers, 200 PAniC-3D assets, 1,188 responses. 12.0% of responses were “neither.” Of judged ratings, 12.2% preferred TRELLIS.2 and 4.5% were ties.</p><div class="tablewrap"><table><caption>PAniC-3D large-scale evaluation, N = 4,892 · Paper Table 4</caption><thead><tr><th>Metric</th><th>TRELLIS.2</th><th>NOFACE3D</th></tr></thead><tbody><tr><td>FID ↓</td><td>13.97</td><td>7.43</td></tr><tr><td>DINO similarity ↑</td><td>0.812</td><td>0.830</td></tr><tr><td>Chamfer × 100 ↓</td><td>3.359</td><td>3.370</td></tr></tbody></table></div><p>See the paper for evaluation protocols, additional baselines, and uncertainty estimates.</p><a href="paper.pdf" target="_blank" rel="noopener">Read the full evaluation ↗</a></details>
+<details><summary>Study details and metrics</summary><p>Human study: 16 reviewers, 200 PAniC-3D assets, 1,188 responses. 12.0% of responses were “neither.” Of judged ratings, 12.2% preferred TRELLIS.2 and 4.5% were ties.</p><div class="tablewrap"><table><caption>PAniC-3D large-scale evaluation, N = 4,892 · Paper Table 4</caption><thead><tr><th>Metric</th><th>TRELLIS.2</th><th>NOFACE3D</th></tr></thead><tbody><tr><td>FID ↓</td><td>13.97</td><td>7.43</td></tr><tr><td>DINO similarity ↑</td><td>0.812</td><td>0.830</td></tr><tr><td>Chamfer × 100 ↓</td><td>3.359</td><td>3.370</td></tr></tbody></table></div><p>See the paper for evaluation protocols, additional baselines, and uncertainty estimates.</p><a href="https://arxiv.org/abs/2610.13050" target="_blank" rel="noopener">Read the full evaluation ↗</a></details>
 </div></div>
 </section>
 <section class="block" id="benchmark" aria-labelledby="benchmark-heading">
@@ -174,7 +174,7 @@ details{border-top:1px solid var(--line);margin-top:24px;padding-top:14px;font-s
 </section>
 <section class="block" id="resources">
 <div class="section-head"><span class="index">08</span><h2>Paper and resources</h2></div>
-<div class="actions" style="justify-content:flex-start"><a class="action primary" href="paper.pdf" target="_blank" rel="noopener">Paper ↗</a><a class="action" href="https://github.com/idkcouscous/NoFACE3D">Website source</a></div><p class="section-lead" style="margin:18px 0 0">Method code and the full BIGDETAIL dataset are planned for release.</p>
+<div class="actions" style="justify-content:flex-start"><a class="action primary" href="https://arxiv.org/abs/2610.13050" target="_blank" rel="noopener">Paper ↗</a><a class="action" href="https://github.com/idkcouscous/NoFACE3D">Website source</a></div><p class="section-lead" style="margin:18px 0 0">Method code and the full BIGDETAIL dataset are planned for release.</p>
 </section>
 </main><footer><span>NOFACE3D · Research project page</span><a href="https://github.com/idkcouscous/NoFACE3D">Website source</a></footer>
 </div>
